@@ -4,47 +4,28 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import _style from './style.css';
 ---
 
 <!doctype html>
 <html lang="fr_FR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="alzo.archi" />
+		<meta name="description" content="Alzo est une mémoire d'agence et un accélérateur de communication pour le monde de l'architecture, de l'urbanisme, et les bureaux d'étude. Prenez rendez-vous dès maintenant !" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<script is:inline async defer data-domain="alzo.archi" src="https://stats.documents.design/js/plausible.js"></script>
+		<link rel="shortcut icon" href="/fav_alzo.svg" type="image/x-icon">
+		<link rel="stylesheet" href="/style.css">
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
+		<footer class="bg-brand/75 text-white text-xs p-20 text-center font-karrik" style="background:linear-gradient(162deg, rgba(255,102,64,1) 0%, rgba(215,55,15,1) 100%);">
+			<img class="h-8 mx-auto mb-4 mt-[.35em] block border-none" src="/alzo.svg" alt="" style="filter: grayscale(1) brightness(0) contrast(5) invert(1)"/>
+			Tous droits réservés © <a class="underlined" target="_blank" href="https://turing-express.fr">Lucas Sifoni / turing-express</a> 2024<br/>
+			Identité visuelle © <a class="underlined" href="https://laurasavignac.com" target="_blank">Laura Savignac, graphiste</a><br/><br/>
+			Font 1 : Karrik by Jean-Baptiste Morizot, Lucas Le Bihan. Distributed by velvetyne.fr<br/>Font 2 : Inter Tight by Rasmus Andersson. Distributed by Google Fonts
+		</footer>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>

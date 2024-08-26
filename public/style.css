@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/InterTight-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Karrik";
+    src: url("/fonts/Karrik-Regular.woff2") format("woff2");
+}
+
+html {
+    font-family: "Inter";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Karrik";
+    letter-spacing: .03ch;
+}
+
+strong,
+u {
+    font-weight: 400 !important;
+}
+
+.font-karrik {
+    font-family: "Karrik";
+    letter-spacing: .03ch;
+}
+
+.soon {
+    position: relative;
+    opacity: .6;
+}
+
+.soon::after {
+    content: "Bientôt !";
+    position: absolute;
+    font-size: 9px;
+    top: 5px;
+    background: rgb(233, 62, 62);
+    color: white;
+    line-height: 9px;
+    padding: 1px 3px;
+    border-radius: 4px;
+}
+
+span.bullet-needscustom {
+    position: relative;
+    bottom: 1.5px;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-thickness: .1ch;
+}
