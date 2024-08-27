@@ -9,26 +9,26 @@ import Layout from '../layouts/Layout.astro';
 <!-- Fin de widget de lien Calendly -->
 
 	<main>
-		<header class="bg-isabelline fixed z-20 shadow-md w-full h-18 p-2 border-none flex justify-between align-center" style="background: linear-gradient(205deg, rgba(248,246,242,1) 0%, rgba(230,225,217,1) 100%);">
-			<img class="h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
-			<button class="btn btn-md border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
+		<header class="bg-isabelline fixed z-20 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center" style="background: linear-gradient(205deg, rgba(248,246,242,1) 0%, rgba(230,225,217,1) 100%);">
+			<img class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
+			<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
 			style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
 			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
 		</header>
-		<section class="bg-brand/80 text-white min-h-[60vh] pt-28 max-h-[95vh] text-center p-10 pb-0 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
-			<h1 class="md:text-6xl text-4xl">Mémoire d'agence<br/>et accélérateur de communication</h1>
+		<section class="bg-brand/80 text-white min-h-[60vh] pt-20 md:pt-28 max-h-[95vh] text-center p-4 md:p-10 pb-0 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
+			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
 			<div style="perspective: 2000px; transform-style:preserve-3d">
-				<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
+				<img src="/screen.png" class="shadow-md relative -bottom-8 w-full md:w-[75%] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
 			</div>
 			<div class="absolute left-0 w-full z-10 bottom-4">
-				<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
+				<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-sm md:btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
 			</div>
 		</section>
-		<section class="bg-celestialblue shadow-2xl text-white ext-center p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
+		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
 			<div id="section-intro" style="position: absolute; top: -4em"></div>
-			<h1 class="md:text-6xl text-4xl">Vos projets, réponses concours, références, site web, et plus<sup class="relative -top-2">*</sup>, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
-			<div class="flex my-20 align-center justify-between">
-				<div class="basis-1/2 p-2 text-left flex flex-col justify-center">
+			<h1 class="md:text-6xl text-xl">Vos projets, réponses concours, références, site web, et plus<sup class="relative -top-2">*</sup>, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
+			<div class="flex flex-col md:flex-row my-8 md:my-20 align-center justify-between">
+				<div class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center">
 					<h2 class="md:text-5xl mb-4 text-2xl">Communiquez efficacement</h2>
 					<p class="md:text-xl text-base max-w-[45ch]">
 						Réalisez en quelques secondes vos réponses concours, fiches projet, listes de références, CV, packs d’assets presse, books, et bien d’autres<sup class="relative -top-1">*</sup>, en respectant votre identité visuelle.<br/>Même votre site web est toujours à jour.<br/>
@@ -36,27 +36,27 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 				</div>
 				<div class="basis-1/2 p-2">
-					<img class="w-[65%] h-auto mx-auto" style="filter:invert(1)" src="/decals/magic.svg">
+					<img class="w-[65%] h-auto mx-auto mt-4 md:mt-0" style="filter:invert(1)" src="/decals/magic.svg">
 				</div>
 			</div>
-			<div class="flex my-20 align-center justify-between">
-				<div class="basis-1/2 p-2 text-left order-1 flex flex-col justify-center">
+			<div class="flex flex-col md:flex-row my-20 align-center justify-between">
+				<div class="basis-1/2 p-0 md:p-2 text-left order-0 md:order-1 flex flex-col justify-center">
 					<h2 class="md:text-5xl mb-4 text-2xl">Ne perdez plus rien</h2>
 					<p class="max-w-[45ch] text-base md:text-xl">
 						Plus de tableaux excel, documents word, disque dur dans un tiroir, dossiers perdus sur votre serveur.<br/><br/>Retrouvez tous les projets via une recherche intelligente.<br/>Filtrez par échelle, intervenants, chronologie, matériaux, parti-pris formels, et plus encore. Explorez vos données pour en dégager des tendances et statistiques.<br/>Promenez-vous dans vos réalisations passées pour soutenir votre culture architecturale.
 					</p>
 				</div>
 				<div class="basis-1/2 p-2">
-					<img class="w-[50%] h-auto mx-auto" style="filter:invert(1)" src="/decals/map.svg">
+					<img class="w-[50%] mt-4 md:mt-0 h-auto mx-auto" style="filter:invert(1)" src="/decals/map.svg">
 				</div>
 			</div>
-			<small class="absolute w-full text-center left-0 bottom-4 text-xs md:text-base">*alzo est extensible, modulaire, et évolutif par client. Nous pouvons développer de nouvelles fonctionnalités privées adaptées aux réalités de chaque agence.<br/>
+			<small class="absolute w-full text-center left-0 bottom-4 text-[7px] md:text-xs">*alzo est extensible, modulaire, et évolutif par client. Nous pouvons développer de nouvelles fonctionnalités privées adaptées aux réalités de chaque agence.<br/>
 			**alzo est également installable "on-prem" (sur votre infrastructure) pour un contrôle maximal sur vos données. Contactez-nous pour en savoir plus.</small>
 		</section>
-		<section class="bg-darkmossgreen text-white ext-center p-10 overflow-hidden relative" style="background: linear-gradient(315deg, rgb(68, 74, 33) 0%, rgba(142,150,95,1) 100%);">
-			<h1 class="text-6xl mb-4 text-center">Au service des architectes depuis 2015</h1>
-			<p class="text-center max-w-[55ch] text-2xl mx-auto mb-12">Alzo synthétise 8 ans d'expérience auprès d'agences d'échelles et activités variées en un produit durable et évolutif.</p>
-			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-10 gap-8 text-darkmossgreen text-xs">
+		<section class="bg-darkmossgreen text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(315deg, rgb(68, 74, 33) 0%, rgba(142,150,95,1) 100%);">
+			<h1 class="text-2xl md:text-6xl mb-4 text-center">Au service des architectes depuis 2015</h1>
+			<p class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12">Alzo synthétise 8 ans d'expérience auprès d'agences d'échelles et activités variées en un produit durable et évolutif.</p>
+			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-darkmossgreen text-xs">
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
 						<img src="/logos/tikoam.png" class="w-16 h-auto object-contain" alt="">
@@ -121,17 +121,17 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
-			<p class="text-center max-w-[45ch] text-xl mx-auto mt-8">Pour que l'apport d'alzo soit optimal, nous travaillons avec vos graphistes et communiquants pour respecter votre image et vos objectifs de communication.</p>
+			<p class="text-center max-w-[45ch] text-xs md:text-xl mx-auto mt-8">Pour que l'apport d'alzo soit optimal, nous travaillons avec vos graphistes et communiquants pour respecter votre image et vos objectifs de communication.</p>
 		</section>
-		<section class="bg-isabelline text-brand-darker text-center p-10 overflow-hidden relative" style="background: linear-gradient(162deg, rgba(248,246,242,1) 0%, rgb(222, 217, 208) 100%);">
-			<h2 class="text-6xl font-semibold">Fonctionnalités et roadmap</h2>
-			<p class="text-2xl my-4 mb-24">Alzo comprend de nombreuses fonctionnalités listées ci-dessous, mais chaque agence est différente.<br/>
+		<section class="bg-isabelline text-brand-darker text-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(162deg, rgba(248,246,242,1) 0%, rgb(222, 217, 208) 100%);">
+			<h2 class="md:text-6xl text-2xl font-semibold">Fonctionnalités et roadmap</h2>
+			<p class="text-sm md:text-2xl my-4 mb-8 md:mb-24">Alzo comprend de nombreuses fonctionnalités listées ci-dessous, mais chaque agence est différente.<br/>
 				Nous réalisons donc des extensions sur demande pour répondre à des besoins spécifiques.</p>
 
-				<div class="mb-40">
-				<h3 class="text-4xl font-semibold mb-4 mt-8">mémoire d'agence</h3>
-				<div class="relative inline-block min-w-[540px]">
-				<table class="table  relative z-10 shadow-xl rounded-md max-w-[540px] table-zebra mx-auto bg-white">
+				<div class="mb-12 md:mb-40">
+				<h3 class="md:text-4xl text-2xl font-semibold mb-4 mt-8">mémoire d'agence</h3>
+				<div class="relative inline-block md:min-w-[540px]">
+				<table class="table text-xs md:text-base relative z-10 shadow-xl rounded-md md:max-w-[540px] table-zebra mx-auto bg-white">
 					<tbody>
 						<tr>
 							<td>Saisie des projets</td>	<td>Carnet d’adresses</td>
@@ -142,17 +142,17 @@ import Layout from '../layouts/Layout.astro';
 						</tr>
 					</tbody>
 				</table>
-				<img src="/decals/mem_left.svg" class="opacity-75  absolute left-0 -translate-x-[100%] bottom-4 h-48" alt="">
-						<img src="/decals/mem_right.svg" class="opacity-75  absolute right-0 translate-x-[97%] bottom-4 h-48" alt="">
+				<img src="/decals/mem_left.svg" class="opacity-0 md:opacity-75 absolute left-0 -translate-x-[100%] bottom-4 h-48" alt="">
+						<img src="/decals/mem_right.svg" class="opacity-0 md:opacity-75  absolute right-0 translate-x-[97%] bottom-4 h-48" alt="">
 				</div>
 			</div>
 
 
-				<div class="mb-40">
-				<h3 class="text-4xl font-semibold mb-4 mt-8">supports génératifs et automatisés</h3>
-				<p class="max-w-[80ch] mx-auto mb-2">Les supports marqués d'un <span class="bullet-needscustom">⦿</span> sont réalisés sur demande, en équipe avec vos graphistes et communiquants, pour respecter votre image et vos besoins en communication.</p>
-				<div class="relative inline-block min-w-[600px]">
-				<table class="table relative z-10 shadow-xl  rounded-md max-w-[600px] table-zebra mx-auto bg-white">
+			<div class="mb-12 md:mb-40">
+					<h2 class="md:text-6xl text-2xl font-semibold">supports génératifs et automatisés</h3>
+				<p class="max-w-[80ch] text-xs md:text-base mx-auto mb-2">Les supports marqués d'un <span class="bullet-needscustom">⦿</span> sont réalisés sur demande, en équipe avec vos graphistes et communiquants, pour respecter votre image et vos besoins en communication.</p>
+				<div class="relative inline-block md:min-w-[600px]">
+				<table class="table text-xs md:text-base relative z-10 shadow-xl  rounded-md max-w-[600px] table-zebra mx-auto bg-white">
 					<tbody>
 						<tr>
 <tr><td><span class="bullet-needscustom">⦿</span> Fiches projet</td>	<td><span class="bullet-needscustom">⦿</span> Génération de sites web</td></tr>
@@ -164,17 +164,17 @@ import Layout from '../layouts/Layout.astro';
 						</tr>
 					</tbody>
 				</table>
-					<img src="/decals/gen_left.svg" class="opacity-75 absolute left-0 -translate-x-[90%] -bottom-0 h-64" alt="">
-					<img src="/decals/gen_right.svg" class="opacity-75 absolute right-0 translate-x-[90%] -bottom-0 h-64" alt="">
+					<img src="/decals/gen_left.svg" class="opacity-0 md:opacity-75 absolute left-0 -translate-x-[90%] -bottom-0 h-64" alt="">
+					<img src="/decals/gen_right.svg" class="opacity-0 md:opacity-75 absolute right-0 translate-x-[90%] -bottom-0 h-64" alt="">
 				</div>
 			</div>
 
-				<div class="mb-40">
-					<h3 class="text-4xl font-semibold mb-4 mt-8">collaboration</h3>
-					<div class="relative inline-block min-w-[700px]">
-						<img src="/decals/scie.svg" class="opacity-75  absolute left-0 -translate-x-[90%] -bottom-0 w-44" alt="">
-						<img src="/decals/marteau.svg" class="opacity-75  absolute right-0 translate-x-[90%] bottom-16 w-28" alt="">
-						<table class="table shadow-xl  rounded-md max-w-[700px] table-zebra mx-auto bg-white">
+			<div class="mb-12 md:mb-40">
+					<h2 class="md:text-6xl text-2xl font-semibold">collaboration</h3>
+					<div class="relative inline-block md:min-w-[700px]">
+						<img src="/decals/scie.svg" class="opacity-0 md:opacity-75 absolute left-0 -translate-x-[90%] -bottom-0 w-44" alt="">
+						<img src="/decals/marteau.svg" class="opacity-0 md:opacity-75 absolute right-0 translate-x-[90%] bottom-16 w-28" alt="">
+						<table class="table text-xs md:text-base shadow-xl  rounded-md max-w-[700px] table-zebra mx-auto bg-white">
 							<tbody>
 								<tr><td>Notifications de changements sur des projets</td>	<td class="soon">Recherche via bot Teams / Slack / Discord</td></tr>
 								<tr><td>Privilèges par-projet et par-outil</td>	<td>Suggestion collaborative d’étiquettes</td></tr>
@@ -184,18 +184,18 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 
-				<div class="relative w-full pb-10 pt-30">
+				<div class="relative w-full pb-10 pt-30 mb-40 md:mb-0">
 					<div class="relative z-10">
-						<h3 class="text-4xl font-semibold mb-4 mt-8">intégration et technique</h3>
-						<table class="table shadow-xl rounded-md max-w-[700px] table-zebra mx-auto bg-white">
+						<h2 class="md:text-6xl text-2xl font-semibold">intégration et technique</h3>
+						<table class="table text-xs md:text-base shadow-xl rounded-md max-w-[700px] table-zebra mx-auto bg-white">
 							<tbody>
 								<tr><td>Webhooks sortants</td>	<td>API en lecture, privilèges par-client</td></tr>
 								<tr><td>Hébergement on-prem sur demande</td> <td class="soon">SSO</td></tr>
 							</tbody>
 						</table>
 					</div>
-					<img src="/decals/bulldoze.svg" class="opacity-75  absolute left-0 -bottom-10 w-80" alt="">
-					<img src="/decals/grue.svg" class="opacity-75  absolute right-10 -bottom-12 w-60" alt="">
+					<img src="/decals/bulldoze.svg" class="opacity-75  absolute left-0 -bottom-40 md:-bottom-10 w-80" alt="">
+					<img src="/decals/grue.svg" class="opacity-0 md:opacity-75  absolute right-10 -bottom-12 w-60" alt="">
 				</div>
 		</section>
 	</main>

@@ -38,7 +38,7 @@ u {
 }
 
 .soon::after {
-    content: "Bientôt !";
+    content: "SOON";
     position: absolute;
     font-size: 9px;
     top: 5px;
