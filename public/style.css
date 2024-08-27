@@ -35,13 +35,15 @@ u {
 .soon {
     position: relative;
     opacity: .6;
+    display: block;
 }
 
 .soon::after {
     content: "SOON";
-    position: absolute;
-    font-size: 9px;
-    top: 5px;
+    position: relative;
+    font-size: 7px;
+    top: -3px;
+    left: 2px;
     background: rgb(233, 62, 62);
     color: white;
     line-height: 9px;
