@@ -22,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 				<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-20 bottom-4 md:bottom-[20%] opacity-0 transition-opacity rounded-md overflow-hidden shadow-2xl -rotate-3" style="transition-duration: 1s"></video>
 				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="z-20 w-60 md:w-80 h-auto border border-white absolute right-6 md:right-20 bottom-48 md:bottom-[25%] opacity-0 transition-opacity rounded-md overflow-hidden shadow-2xl rotate-2" style="transition-duration: 1s"></video>
-				<script inline:true>
+				<script is:inline>
 					['video_1', 'video_2'].map(function(v, i){
 						document.getElementById(v).addEventListener('loadeddata', function (e) {
 						if(e.target.readyState === 4) {
