@@ -15,24 +15,24 @@ import Layout from '../layouts/Layout.astro';
 			style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
 			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
 		</header>
-		<section class="bg-brand/80 text-white min-h-[60vh] pt-20 md:pt-28 pb-[400px] md:pb-0 max-h-[95vh] text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
+		<section class="bg-brand/80 text-white min-h-[60vh] pt-20 md:pt-28 pb-[60px] md:pb-0 max-h-[95vh] text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
 			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
 			<div style="perspective: 2000px; transform-style:preserve-3d" class="relative">
 				<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] max-w-[840px] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
 			</div>
-				<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-20 bottom-4 md:bottom-[20%] opacity-0 transition-opacity rounded-md overflow-hidden shadow-2xl -rotate-3" style="transition-duration: 1s"></video>
-				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="z-20 w-60 md:w-80 h-auto border border-white absolute right-6 md:right-20 bottom-48 md:bottom-[25%] opacity-0 transition-opacity rounded-md overflow-hidden shadow-2xl rotate-2" style="transition-duration: 1s"></video>
+			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-xs mt-20 -mb-10">
+				<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-auto border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
+				<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-auto border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
+				<div class="basis-60 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre automatisation que nous concevrons ensemble.</div></div>
+			</div>
+				<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-20 bottom-4 md:bottom-[20%] transition-opacity rounded-md overflow-hidden shadow-md -rotate-3" style="transition-duration: 1s"></video>
+				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-6 md:right-20 bottom-48 md:bottom-[25%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
+				<div class="transitionable opacity-0 hidden md:flex w-80 z-10 absolute right-[15%] rotate-2 bottom-[10%] h-40 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre automatisation que nous concevrons ensemble.</div></div>
 				<script is:inline>
-					['video_1', 'video_2'].map(function(v, i){
-						document.getElementById(v).addEventListener('loadeddata', function (e) {
-						if(e.target.readyState === 4) {
-							setTimeout(function() {
-								e.target.currentTime = 0;
-								e.target.play();
-								e.target.style.opacity = 1;
-							}, 2000 * i + 500);
-						}
-						});
+					Array.from(document.querySelectorAll('.transitionable')).map(function(el, i) {
+						setTimeout(function() {
+							el.style.opacity = 1;
+						}, 1000 * i);
 					});
 				</script>
 			<div class="absolute left-0 w-full z-30 bottom-60 md:bottom-4">
