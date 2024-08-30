@@ -10,13 +10,16 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		<header class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center" style="background: linear-gradient(205deg, rgba(248,246,242,1) 0%, rgba(230,225,217,1) 100%);">
-			<img class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
-			<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
-			style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
-			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
+			<div class="relative mx-auto w-full max-w-[1440px] flex justify-between align-center">
+				<img class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
+				<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
+				style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
+				onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
+			</div>
 		</header>
-		<section class="bg-brand/80 text-white min-h-[60vh] pt-20 md:pt-28 pb-[60px] md:pb-0 max-h-[95vh] text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
+		<section class="bg-brand/80 text-white pt-20 md:pt-28 pb-[60px]  text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
 			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
+			<div class="relative mx-auto w-full max-w-[1440px]">
 			<div style="perspective: 2000px; transform-style:preserve-3d" class="relative">
 				<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] max-w-[840px] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
 			</div>
@@ -27,9 +30,9 @@ import Layout from '../layouts/Layout.astro';
 				<div class="basis-60 shrink-0 shadow-md bg-isabelline rounded-md flex items-center md:hidden justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre intégration ! alzo est extensible.</div></div>
 			</div>
 				<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-6 bottom-4 bottom-20 transition-opacity rounded-md overflow-hidden shadow-md -rotate-3" style="transition-duration: 1s"></video>
-				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-6 md:right-20 bottom-48 md:bottom-[25%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
-				<video id="video_3" src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-20 bottom-64 transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
-				<div class="transitionable opacity-0 hidden md:flex w-80 z-10 absolute right-[15%] -rotate-2 bottom-[10%] h-40 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">... et toute autre intégration ! alzo est extensible.</div></div>
+				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-0 bottom-[35%] transition-opacity rounded-md overflow-hidden shadow-md -rotate-2" style="transition-duration: 1s"></video>
+				<video id="video_3" src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-0 bottom-[35%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
+				<div class="transitionable opacity-0 hidden md:flex w-80 z-10 absolute right-[0%] rotate-2 bottom-4 h-40 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">... et toute autre intégration ! alzo est extensible.</div></div>
 				<script is:inline>
 					Array.from(document.querySelectorAll('.transitionable')).map(function(el, i) {
 						setTimeout(function() {
@@ -37,12 +40,14 @@ import Layout from '../layouts/Layout.astro';
 						}, 1000 * i);
 					});
 				</script>
-			<div class="absolute left-0 w-full z-30 bottom-60 md:bottom-4">
+			<div class="absolute left-0 w-full z-30 bottom-120 md:bottom-4">
 				<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-sm md:btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
+			</div>
 			</div>
 		</section>
 		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
 			<div id="section-intro" style="position: absolute; top: -4em"></div>
+			<div class="relative mx-auto w-full max-w-[1440px] pb-[60px]">
 			<h1 class="md:text-6xl text-xl">Vos projets, réponses concours, références, site web, et plus<sup class="relative -top-2">*</sup>, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
 			<div class="flex flex-col md:flex-row my-8 md:my-20 align-center justify-between">
 				<div class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center">
@@ -69,10 +74,13 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<small class="absolute w-full text-center left-0 bottom-4 text-[7px] md:text-xs">*alzo est extensible, modulaire, et évolutif par client. Nous pouvons développer de nouvelles fonctionnalités privées adaptées aux réalités de chaque agence.<br/>
 			**alzo est également installable "on-prem" (sur votre infrastructure) pour un contrôle maximal sur vos données. Contactez-nous pour en savoir plus.</small>
+		</div>
 		</section>
 		<section class="bg-darkmossgreen text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(315deg, rgb(68, 74, 33) 0%, rgba(142,150,95,1) 100%);">
+			<div class="relative mx-auto w-full max-w-[1440px]">
 			<h1 class="text-2xl md:text-6xl mb-4 text-center">Au service des architectes depuis 2015</h1>
 			<p class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12">Alzo synthétise 8 ans d'expérience auprès d'agences d'échelles et activités variées en un produit durable et évolutif.</p>
+			</div>
 			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-darkmossgreen text-xs">
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
@@ -138,7 +146,9 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 			</div>
-			<p class="text-center max-w-[45ch] text-xs md:text-xl mx-auto mt-8">Pour que l'apport d'alzo soit optimal, nous travaillons avec vos graphistes et communiquants pour respecter votre image et vos objectifs de communication.</p>
+			<div class="relative mx-auto w-full max-w-[1440px]">
+				<p class="text-center max-w-[45ch] text-xs md:text-xl mx-auto mt-8">Pour que l'apport d'alzo soit optimal, nous travaillons avec vos graphistes et communiquants pour respecter votre image et vos objectifs de communication.</p>
+			</div>
 		</section>
 		<section class="bg-isabelline text-brand-darker text-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(162deg, rgba(248,246,242,1) 0%, rgb(222, 217, 208) 100%);">
 			<h2 class="md:text-6xl text-2xl ">Fonctionnalités et roadmap</h2>
