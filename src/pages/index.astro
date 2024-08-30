@@ -17,32 +17,32 @@ import Layout from '../layouts/Layout.astro';
 				onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
 			</div>
 		</header>
-		<section class="bg-brand/80 text-white pt-20 md:pt-28 pb-[60px]  text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
+		<section class="bg-brand/80 text-white pt-20 md:pt-28 pb-[60px] max-h-[750px] text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
 			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
 			<div class="relative mx-auto w-full max-w-[1440px]">
-			<div style="perspective: 2000px; transform-style:preserve-3d" class="relative">
-				<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] max-w-[840px] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
-			</div>
-			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-xs mt-20 -mb-10">
-				<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
-				<video src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
-				<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
-				<div class="basis-60 shrink-0 shadow-md bg-isabelline rounded-md flex items-center md:hidden justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre intégration ! alzo est extensible.</div></div>
-			</div>
-				<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-6 bottom-4 bottom-20 transition-opacity rounded-md overflow-hidden shadow-md -rotate-3" style="transition-duration: 1s"></video>
-				<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-0 bottom-[35%] transition-opacity rounded-md overflow-hidden shadow-md -rotate-2" style="transition-duration: 1s"></video>
-				<video id="video_3" src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-0 bottom-[35%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
-				<div class="transitionable opacity-0 hidden md:flex w-80 z-10 absolute right-[0%] rotate-2 bottom-4 h-40 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">... et toute autre intégration ! alzo est extensible.</div></div>
-				<script is:inline>
-					Array.from(document.querySelectorAll('.transitionable')).map(function(el, i) {
-						setTimeout(function() {
-							el.style.opacity = 1;
-						}, 1000 * i);
-					});
-				</script>
-			<div class="absolute left-0 w-full z-30 bottom-120 md:bottom-4">
-				<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-sm md:btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
-			</div>
+				<div style="perspective: 2000px; transform-style:preserve-3d" class="relative">
+					<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] max-w-[840px] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
+				</div>
+				<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-xs mt-20 -mb-10">
+					<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
+					<video src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
+					<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-2xl" style="transition-duration: 1s"></video>
+					<div class="basis-60 shrink-0 shadow-md bg-isabelline rounded-md flex items-center md:hidden justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre intégration ! alzo est extensible.</div></div>
+				</div>
+					<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-6 bottom-44 transition-opacity rounded-md overflow-hidden shadow-md -rotate-3" style="transition-duration: 1s"></video>
+					<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-0 bottom-[55%] transition-opacity rounded-md overflow-hidden shadow-md -rotate-2" style="transition-duration: 1s"></video>
+					<video id="video_3" src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-0 bottom-[55%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
+					<div class="transitionable opacity-0 hidden md:flex w-80 z-10 absolute right-[0%] rotate-2 bottom-44 h-40 shrink-0 shadow-md bg-isabelline rounded-md flex items-center justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">... et toute autre intégration ! alzo est extensible.</div></div>
+					<script is:inline>
+						Array.from(document.querySelectorAll('.transitionable')).map(function(el, i) {
+							setTimeout(function() {
+								el.style.opacity = 1;
+							}, 1000 * i);
+						});
+					</script>
+				<div class="absolute left-0 w-full z-30 bottom-120 md:bottom-40">
+					<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-sm md:btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
+				</div>
 			</div>
 		</section>
 		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
