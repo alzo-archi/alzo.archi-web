@@ -54,7 +54,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center">
 					<h2 class="md:text-5xl mb-4 text-2xl">Communiquez efficacement</h2>
 					<p class="md:text-xl text-base max-w-[45ch]">
-						Réalisez en quelques secondes vos réponses concours, fiches projet, listes de références, CV, packs d’assets presse, books, et bien d’autres<sup class="relative -top-1">*</sup>, en respectant votre identité visuelle.<br/>Même votre site web est toujours à jour.<br/>
+						Générez en quelques secondes vos réponses concours, fiches projet, listes de références, CV, packs d’assets presse, books, et bien d’autres<sup class="relative -top-1">*</sup>, en respectant votre identité visuelle.<br/>Même votre site web est toujours à jour.<br/>
 						Même si alzo est installé en interne.<sup class="relative -top-1">**</sup>
 					</p>
 				</div>
@@ -177,8 +177,8 @@ import Layout from '../layouts/Layout.astro';
 
 
 			<div class="mb-12 md:mb-40">
-					<h2 class="md:text-6xl text-2xl mb-0 md:mb-4 ">supports génératifs et automatisés</h3>
-				<p class="max-w-[80ch] text-xs md:text-base mx-auto mb-2">Les supports marqués d'un <span class="bullet-needscustom">⦿</span> sont réalisés sur demande, en équipe avec vos graphistes et communiquants, pour respecter votre image et vos besoins en communication.</p>
+					<h2 class="md:text-6xl text-2xl mb-0 md:mb-4 ">générateurs de documents et sites web</h3>
+				<p class="max-w-[80ch] text-xs md:text-base mx-auto mb-2">Les générateurs de supports marqués d'un <span class="bullet-needscustom">⦿</span> sont réalisés sur demande, en équipe avec vos graphistes et communiquants, pour respecter votre image et vos besoins en communication.<br/>Ensuite, vous êtes totalement autonome et n'avez plus à vous soucier de mise en forme.</p>
 				<div class="relative inline-block md:min-w-[600px]">
 				<table class="table text-xs md:text-base relative z-10 shadow-xl  rounded-md max-w-[600px] table-zebra mx-auto bg-white">
 					<tbody>
@@ -195,6 +195,7 @@ import Layout from '../layouts/Layout.astro';
 					<img src="/decals/gen_left.png" class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[102%] -bottom-6 h-80" alt="">
 					<img src="/decals/gen_right.png" class="opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 h-80" alt="">
 				</div>
+				<p class="mt-4 max-w-[80ch] text-xs md:text-base mx-auto mb-2">Cette liste n'est pas exhaustive mais s'appuie sur des demandes d'agences avec qui nous travaillons actuellement. Nous pouvons créer pour vous tout type d'application à brancher à alzo pour générer des documents pdf, word, excel, des sites internet, s'interconnecter avec d'autres CRM ou ERP, et exploitant votre base de données structurée.</p>
 			</div>
 
 			<div class="mb-12 md:mb-40">
@@ -228,13 +229,25 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
 			<h1 class="md:text-6xl text-2xl mb-4 text-center">services complémentaires</h1>
-			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps de <strong class="underlined">remplir les données</strong>, <strong class="underlined">prendre en main l'outil</strong>, ou bien <strong class="underlined">il vous manque une fonctionnalité</strong> ?</p>
+			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps de <strong class="underlined">remplir les données</strong>, <strong class="underlined">prendre en main l'outil</strong>, ou bien <strong class="underlined">s'il vous manque une fonctionnalité</strong> ?</p>
 			<ul class="text-xl mx-auto max-w-[65ch]">
 				<li>Nous pouvons :</li>
 				<li>- venir sur place importer vos données de sources variées</li>
 				<li>- vous former, sur place ou en visio</li>
 				<li>- échanger avec vous et développer des fonctionnalités sur mesure</li>
 			</ul>
+		</section>
+		<section class="bg-isabelline shadow-2xl text-brand-darker ext-center p-4 md:p-10 overflow-hidden relative">
+			<h1 class="md:text-6xl text-2xl mb-4 text-center">on prend rendez-vous ?</h1>
+			<p class="text-sm md:text-2xl my-4 mb-4  block max-w-[60ch] mx-auto text-center">
+				Les agences qui utilisent nos solutions ne perdent plus d'information projet, et préparent leurs candidatures bien plus vite.
+			</p>
+			<button class="block btn btn-xl mx-auto relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
+			style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
+			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous (visio de 30 minutes)</button>
+			<p class="text-sm md:text-2xl my-4 mb-4 block max-w-[60ch] mx-auto text-center">
+				Vous n'êtes pas architecte, mais RP/communicant pour architectes ?<br/>Et si vos clients avaient une base de donnée projets bien rangée ?
+			</p>
 		</section>
 	</main>
 </Layout>
