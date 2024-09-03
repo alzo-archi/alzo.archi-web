@@ -9,153 +9,132 @@ import Layout from '../layouts/Layout.astro';
 <!-- Fin de widget de lien Calendly -->
 
 	<main>
-		<header class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center" style="background: linear-gradient(205deg, rgba(248,246,242,1) 0%, rgba(230,225,217,1) 100%);">
+		<header class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center">
 			<div class="relative mx-auto w-full max-w-[1440px] flex justify-between align-center">
 				<img class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
-				<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
-				style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
+				<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand hover:bg-brand text-white rounded-full"
 				onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
 			</div>
 		</header>
-		<section class="bg-brand/80 text-white pt-20 md:pt-28 pb-[60px] max-h-[750px] text-center p-4 md:p-10 shadow-md overflow-hidden relative" style="background: linear-gradient(135deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 100%);">
+		<section class="bg-brand/80 text-white pt-20 md:pt-28 text-center p-4 md:p-10 shadow-md overflow-hidden relative">
 			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
 			<div class="relative mx-auto w-full max-w-[1440px]">
-				<div style="perspective: 2000px; transform-style:preserve-3d" class="relative">
-					<img src="/screen.png" class="shadow-md relative -bottom-8 w-[75%] max-w-[840px] h-auto mx-auto" style="transform: rotateX(-6deg) rotateY(-6deg)" alt="">
-				</div>
-				<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-xs mt-20 -mb-10">
-					<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-					<video src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-					<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-					<video src="/videos/alzo_web.mp4" playsinline muted autoplay loop class="md:hidden z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-					<div class="basis-60 shrink-0 shadow-md bg-isabelline rounded-md flex items-center md:hidden justify-center text-brand-darker"><div class="italic px-8 text-base leading-tight">...et toute autre intégration ! alzo est extensible.</div></div>
-				</div>
-					<video id="video_1" src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-6 md:left-6 bottom-44 transition-opacity rounded-md overflow-hidden shadow-md -rotate-3" style="transition-duration: 1s"></video>
-					<video id="video_2" src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-0 bottom-[55%] transition-opacity rounded-md overflow-hidden shadow-md -rotate-2" style="transition-duration: 1s"></video>
-					<video id="video_3" src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute left-0 bottom-[55%] transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
-					<video id="video_4" src="/videos/alzo_web.mp4" playsinline muted autoplay loop class="transitionable opacity-0 hidden md:block z-20 w-60 md:w-80 h-auto border border-white absolute right-0 bottom-40 transition-opacity rounded-md overflow-hidden shadow-md rotate-2" style="transition-duration: 1s"></video>
-					<script is:inline>
-						Array.from(document.querySelectorAll('.transitionable')).map(function(el, i) {
-							setTimeout(function() {
-								el.style.opacity = 1;
-							}, 1000 * i);
-						});
-					</script>
-				<div class="absolute left-0 w-full z-30 bottom-120 md:bottom-40">
-					<a href="#section-intro" class="rounded-full shadow-md mx-auto btn btn-sm md:btn-md text-white bg-celestialblue hover:bg-carolinablue border-none hover:border-none hover:shadow-xl">&darr; En savoir plus</a>
-				</div>
+				<img src="/screen.png" class="shadow-md relative -bottom-4 md:-bottom-16 w-[75%] max-w-[840px] h-auto mx-auto" alt="">
 			</div>
 		</section>
-		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
-			<div id="section-intro" style="position: absolute; top: -4em"></div>
+		<div class="bg-[#E7ECC8] flex min-w-full px-10 overflow-x-scroll overflow-y-visible py-4 md:py-10 gap-4 md:gap-8 text-xs md:justify-center">
+			<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
+			<video src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
+			<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
+			<video src="/videos/alzo_web.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
+		</div>
+		<section class="bg-[#F8F6F2] shadow-2xl text-[#FF4000] p-4 md:p-10 overflow-hidden relative">
 			<div class="relative mx-auto w-full max-w-[1440px] pb-[60px]">
-			<h1 class="md:text-6xl text-xl">Vos projets, réponses concours, références, site web, et plus<sup class="relative -top-2">*</sup>, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
+			<h1 class="fs-t1 mb-16 text-center max-w-[25ch] mx-auto">Vos projets, documents, références, site web, et bien plus, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
+			<hr class="border-none h-[1px] bg-brand"> 
 			<div class="flex flex-col md:flex-row my-8 md:my-20 align-center justify-between">
 				<div class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center">
 					<h2 class="md:text-5xl mb-4 text-2xl">Communiquez efficacement</h2>
 					<p class="md:text-xl text-base max-w-[45ch]">
-						Générez en quelques secondes vos réponses concours, fiches projet, listes de références, CV, packs d’assets presse, books, et bien d’autres<sup class="relative -top-1">*</sup>, en respectant votre identité visuelle.<br/>Même votre site web est toujours à jour.<br/>
-						Même si alzo est installé en interne.<sup class="relative -top-1">**</sup>
+						À partir de votre base données, générez en quelques secondes vos réponses concours, fiches projet, listes de références, CV, kits presse, books, et bien plus, tout en respectant votre identité visuelle.
 					</p>
 				</div>
 				<div class="basis-1/2 p-2">
-					<img class="w-[65%] h-auto mx-auto mt-4 md:mt-0" style="filter:contrast(5) invert(1)" src="/decals/magic.png">
+					<img class="w-[65%] h-auto mx-auto mt-4 md:mt-0" style="filter:contrast(5)" src="/decals/magic.png">
 				</div>
 			</div>
+			<hr class="border-none h-[1px] bg-brand"> 
 			<div class="flex flex-col md:flex-row my-20 align-center justify-between">
 				<div class="basis-1/2 p-0 md:p-2 text-left order-0 md:order-1 flex flex-col justify-center">
 					<h2 class="md:text-5xl mb-4 text-2xl">Ne perdez plus rien</h2>
 					<p class="max-w-[45ch] text-base md:text-xl">
-						Plus de tableaux excel, documents word, disque dur dans un tiroir, dossiers perdus sur votre serveur.<br/><br/>Retrouvez tous les projets via une recherche intelligente.<br/>Filtrez par échelle, intervenants, chronologie, matériaux, parti-pris formels, et plus encore. Explorez vos données pour en dégager des tendances et statistiques.<br/>Promenez-vous dans vos réalisations passées pour soutenir votre culture architecturale.
+						Plus de tableaux excel, documents word, disque dur dans un tiroir, dossiers perdus sur votre serveur...  Promenez-vous dans vos réalisations pour soutenir votre culture architecturale.<br/>
+• Recherche intelligente<br/>• Filtrage de vos projets par échelle, intervenants, chronologie, matériaux, parti-pris formels, et plus encore.<br/>• Exploration de vos données pour en dégager des tendances et  statistiques. 
 					</p>
 				</div>
 				<div class="basis-1/2 p-2">
-					<img class="w-[50%] mt-4 md:mt-0 h-auto mx-auto" style="filter:contrast(5) invert(1)" src="/decals/map.png">
+					<img class="w-[50%] mt-4 md:mt-0 h-auto mx-auto" style="filter:contrast(5)" src="/decals/map.png">
 				</div>
 			</div>
 			<small class="absolute w-full text-center left-0 bottom-4 text-[7px] md:text-xs">*alzo est extensible, modulaire, et évolutif par client. Nous pouvons développer de nouvelles fonctionnalités privées adaptées aux réalités de chaque agence.<br/>
 			**alzo est également installable "on-prem" (sur votre infrastructure) pour un contrôle maximal sur vos données. Contactez-nous pour en savoir plus.</small>
 		</div>
 		</section>
-		<section class="bg-darkmossgreen text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(315deg, rgb(68, 74, 33) 0%, rgba(142,150,95,1) 100%);">
+		<section class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative">
 			<div class="relative mx-auto w-full max-w-[1440px]">
 			<h1 class="text-2xl md:text-6xl mb-4 text-center">Au service des architectes depuis 2015</h1>
 			<p class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12">Alzo synthétise 8 ans d'expérience auprès d'agences d'échelles et activités variées en un produit durable et évolutif.</p>
 			</div>
-			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-darkmossgreen text-xs">
+			<div class="relative mx-auto w-full max-w-[1440px]">
+			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-[#0085C8] text-xs">
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/tikoam.png" class="w-16 h-auto object-contain" alt="">
+						<img src="/logos/tikoam.png" class="w-16 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Tikoam</h3>
-						<p class="text-left text-darkmossgreen/70">Remplacement total d'inDesign pour l'agence Tikoam par un outil sur-mesure pour composer des mémoires techniques et portfolios à plusieurs, à la vitesse de l'éclair.</small></p>
+						<p class="text-left text-[#0085C8]/70">Remplacement total d'inDesign pour l'agence Tikoam par un outil sur-mesure pour composer des mémoires techniques et portfolios à plusieurs, à la vitesse de l'éclair.</small></p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/sequences.png" class="w-16 h-auto object-contain" alt="">
+						<img src="/logos/sequences.png" class="w-16 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Séquences</h3>
-						<p class="text-left text-darkmossgreen/70">Base de données métier complète on-prem, édition multisupports avancée, multi-utilisateur, API publique, sites web autogénérés, extensibilité. <strong class="underlined">La première instance d'Alzo !</strong></small></p>
+						<p class="text-left text-[#0085C8]/70">Base de données métier complète on-prem, édition multisupports avancée, multi-utilisateur, API publique, sites web autogénérés, extensibilité. <strong class="underlined">La première instance d'Alzo !</strong></small></p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/amm.png" class="w-10 h-auto object-contain" alt="">
+						<img src="/logos/amm.png" class="w-10 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Architecture Malacan Martres</h3>
-						<p class="text-left text-darkmossgreen/70">Automatisation des supports de présentation concours et site web via un backoffice unifié.<br/></p>
+						<p class="text-left text-[#0085C8]/70">Automatisation des supports de présentation concours et site web via un backoffice unifié.<br/></p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/duffau.png" class="w-16 h-auto object-contain" alt="">
+						<img src="/logos/duffau.png" class="w-16 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Duffau &Associés</h3>
-						<p class="text-left text-darkmossgreen/70">Automatisation des supports de présentation concours et site web via un backoffice unifié, génération d'images, pipeline d'édition de books remplaçant inDesign.</p>
+						<p class="text-left text-[#0085C8]/70">Automatisation des supports de présentation concours et site web via un backoffice unifié, génération d'images, pipeline d'édition de books remplaçant inDesign.</p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/lcr.png" class="w-auto h-16 object-contain" alt="">
+						<img src="/logos/lcr.png" class="w-auto h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >LCR Architectes</h3>
-						<p class="text-left text-darkmossgreen/70">Automatisation des supports de présentation concours et site web via un backoffice unifié.</small></p>
+						<p class="text-left text-[#0085C8]/70">Automatisation des supports de présentation concours et site web via un backoffice unifié.</small></p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/scalene.png" class="w-16 h-auto object-contain" alt="">
+						<img src="/logos/scalene.png" class="w-16 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Scalène</h3>
-						<p class="text-left text-darkmossgreen/70">Base de données métier complète, édition multisupports avancée, API publique, sites web autogénérés. Un projet précurseur d'alzo !</small></p>
+						<p class="text-left text-[#0085C8]/70">Base de données métier complète, édition multisupports avancée, API publique, sites web autogénérés. Un projet précurseur d'alzo !</small></p>
 					</div>
 				</div>
 				<div class="shadow-xl rounded-md flex bg-white h-40 p-4" style="flex: 0 0 300px">
 					<div>
-						<img src="/logos/execo.png" class="w-16 h-auto object-contain" alt="">
+						<img src="/logos/execo.png" class="w-16 h-auto object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
 					</div>
 					<div class="flex-1 pl-4 relative -top-1">
 						<h3 >Execo</h3>
-						<p class="text-left text-darkmossgreen/70">Automatisation de dossiers concours.</small></p>
+						<p class="text-left text-[#0085C8]/70">Automatisation de présentations.</small></p>
 					</div>
 				</div>
 			</div>
-			<div class="relative mx-auto w-full max-w-[1440px]">
-				<p class="text-center max-w-[45ch] text-xs md:text-xl mx-auto mt-8">Pour que l'apport d'alzo soit optimal, nous travaillons avec vos graphistes et communiquants pour respecter votre image et vos objectifs de communication.</p>
 			</div>
 		</section>
 		<section class="bg-isabelline text-brand-darker text-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(162deg, rgba(248,246,242,1) 0%, rgb(222, 217, 208) 100%);">
 			<h2 class="md:text-6xl text-2xl ">Fonctionnalités et roadmap</h2>
-			<p class="text-sm md:text-2xl my-4 mb-8 md:mb-24">Alzo comprend de nombreuses fonctionnalités listées ci-dessous, mais chaque agence est différente.<br/>
-				Nous réalisons donc des extensions sur demande pour répondre à des besoins spécifiques.</p>
-
 				<div class="mb-12 md:mb-40">
 				<h3 class="md:text-6xl text-2xl  mb-4 mt-8">mémoire d'agence</h3>
 				<div class="relative inline-block md:min-w-[540px]">
@@ -227,27 +206,24 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 		</section>
-		<section class="bg-celestialblue shadow-2xl text-white ext-center p-4 md:p-10 overflow-hidden relative" style="background: linear-gradient(60deg, rgb(51, 113, 158) 0%, rgb(86, 153, 201) 100%);">
-			<h1 class="md:text-6xl text-2xl mb-4 text-center">services complémentaires</h1>
-			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps de <strong class="underlined">remplir les données</strong>, <strong class="underlined">prendre en main l'outil</strong>, ou bien <strong class="underlined">s'il vous manque une fonctionnalité</strong> ?</p>
-			<ul class="text-xl mx-auto max-w-[65ch]">
-				<li>Nous pouvons :</li>
-				<li>- venir sur place importer vos données de sources variées</li>
-				<li>- vous former, sur place ou en visio</li>
-				<li>- échanger avec vous et développer des fonctionnalités sur mesure</li>
-			</ul>
+		<section class="bg-[#7D8922] shadow-2xl text-[#EEF3CE] ext-center p-4 md:p-10 overflow-hidden relative">
+			<p class="fs-t6 mb-4 max-w-[50ch] mx-auto text-center">
+				Alzo comprend de nombreuses fonctionnalités. Comme chaque agence est différente, nous réalisons des extensions sur demande pour répondre à des besoins spécifiques.
+			</p>
 		</section>
-		<section class="bg-isabelline shadow-2xl text-brand-darker ext-center p-4 md:p-10 overflow-hidden relative">
-			<h1 class="md:text-6xl text-2xl mb-4 text-center">on prend rendez-vous ?</h1>
-			<p class="text-sm md:text-2xl my-4 mb-4  block max-w-[60ch] mx-auto text-center">
-				Les agences qui utilisent nos solutions ne perdent plus d'information projet, et préparent leurs candidatures bien plus vite.
+		<section class="bg-[#EEF3CE] shadow-2xl text-[#7D8922] ext-center p-4 md:p-10 overflow-hidden relative">
+			<h1 class="fs-t1 mb-4 text-center">Services complémentaires</h1>
+			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps de remplir les données, prendre en main l'outil, ou bien vous pensez qu'il vous manque une fonctionnalité ?</p>
+			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Nous pouvons venir sur place importer vos données de sources variées, vous former, échanger avec vous et développer des fonctionnalités sur mesure</p>
+		</section>
+		<section class="bg-[#FF4000] shadow-2xl text-[#F8F6F2] ext-center p-4 md:p-10 overflow-hidden relative">
+			<h1 class="fs-t1 mb-4 text-center">Discutons-en !</h1>
+			<p class="fs-t3  block mx-auto text-center">
+				Que vous soyez architecte, ou communiquant pour architectes, alzo peut vous aider.<br/>
+				Nous proposons des créneaux de 30 minutes en visio pour une première rencontre.
 			</p>
-			<button class="block btn btn-xl mx-auto relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand-darker hover:bg-brand text-white rounded-full"
-			style="background: linear-gradient(180deg, rgba(255,92,51,1) 0%, rgba(198,68,36,1) 300%);"
-			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous (visio de 30 minutes)</button>
-			<p class="text-sm md:text-2xl my-4 mb-4 block max-w-[60ch] mx-auto text-center">
-				Vous n'êtes pas architecte, mais RP/communicant pour architectes ?<br/>Et si vos clients avaient une base de donnée projets bien rangée ?
-			</p>
+			<button class="block btn btn-xl mx-auto relative top-1 mt-4 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-isabelline text-brand hover:bg-isabelline rounded-full"
+			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
 		</section>
 	</main>
 </Layout>
