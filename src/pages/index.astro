@@ -317,11 +317,19 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 
 		<section
-			class="bg-isabelline text-brand text-center p-4 md:p-10 overflow-hidden relative"
+			class="bg-isabelline text-brand text-center p-4 md:p-10 relative"
 		>
-			<h2 class="md:text-6xl text-2xl">Fonctionnalités</h2>
+			<h2 class="md:text-6xl text-2xl mb-8">Fonctionnalités</h2>
+
+			<div class="hidden md:flex justify-center gap-8 sticky top-14 bg-isabelline p-4 z-20 w-full rounded-full shadow-sm">
+				<a href="#memoire-agence" data-fades-by-scroll="" class="border border-brand transition bg-brand text-white rounded-full p-2">Mémoire d'agence</a>
+				<a href="#gen-documents" data-fades-by-scroll="" class="border border-brand transition rounded-full p-2">Génération de documents</a>
+				<a href="#collaboration" data-fades-by-scroll="" class="border border-brand transition rounded-full p-2">Collaboration</a>
+				<a href="#integration-technique" data-fades-by-scroll="" class="border border-brand transition rounded-full p-2">Intégrations et technique</a>
+			</div>
+
 			<div class="mb-12 md:mb-40">
-				<h3 class="md:text-4xl text-2xl mb-4 mt-8">Mémoire d'agence</h3>
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8" id="memoire-agence">Mémoire d'agence</h3>
 				<div class="relative inline-block md:min-w-[540px]">
 					<table
 						class="text-xs md:text-base text-left relative z-10 rounded-md md:max-w-[540px] mx-auto"
@@ -381,7 +389,7 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<div class="mb-12 md:mb-40">
-				<h3 class="md:text-4xl text-2xl mb-4 mt-8">
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8" id="gen-documents">
 					Générateurs de documents et sites web
 				</h3>
 				<p
@@ -436,7 +444,7 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<div class="mb-12 md:mb-40">
-				<h3 class="md:text-4xl text-2xl mb-4 mt-8">Collaboration</h3>
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8" id="collaboration">Collaboration</h3>
 				<div class="relative inline-block md:min-w-[700px]">
 					<img
 						src="/decals/collab_left.png"
@@ -492,7 +500,7 @@ import Layout from "../layouts/Layout.astro";
 
 			<div class="relative w-full pb-10 pt-30 pb-30">
 				<div class="relative z-10 inline-block">
-					<h3 class="md:text-4xl text-2xl mb-4 mt-8">
+					<h3 class="md:text-4xl text-2xl mb-4 mt-8" id="integration-technique">
 						Intégrations et technique
 					</h3>
 					<table
@@ -530,6 +538,37 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 		</section>
+		<script is:inline>
+			(function() {
+				var heights_map = {'memoire-agence': 1, 'gen-documents': 2, 'collaboration': 3, 'integration-technique': 4};
+				function setHeights() {
+					Object.keys(heights_map).forEach(function(key) {
+						var el = document.getElementById(key);
+						heights_map[key] = el.getBoundingClientRect().top + document.scrollingElement.scrollTop;
+					});
+				};
+				setHeights();
+				window.addEventListener('resize', setHeights);
+				window.addEventListener('scroll', function(e) {
+					var min = [false, 9999999999];
+					Object.keys(heights_map).forEach(function(key) {
+						var challenger = Math.abs(heights_map[key] - document.scrollingElement.scrollTop);
+						if (challenger < min[1]) {
+							min = [key, challenger];
+						}
+					});
+					if (min[0]) {
+						document.querySelectorAll('[data-fades-by-scroll]').forEach(function(el) {
+							el.classList.remove('bg-brand', 'text-white');
+						});
+						var target = document.querySelector('[href="#'+min[0]+'"]');
+						if (target) {
+							target.classList.add('bg-brand', 'text-white');
+						}
+					}
+				});
+			})();
+		</script>
 	</main>
 	<section
 		class="bg-[#7D8922] shadow-2xl text-[#EEF3CE] ext-center p-4 md:p-10 overflow-hidden relative"
