@@ -1,213 +1,574 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Alzo, mémoire d'agence et accélérateur de communication pour les architectes">
+<Layout
+	title="Alzo, mémoire d'agence et accélérateur de communication pour les architectes"
+>
 	<!-- Début de widget de lien Calendly -->
-	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<!-- Fin de widget de lien Calendly -->
+	<link
+		href="https://assets.calendly.com/assets/external/widget.css"
+		rel="stylesheet"
+	/>
+	<script
+		src="https://assets.calendly.com/assets/external/widget.js"
+		type="text/javascript"
+		async></script>
+	<!-- Fin de widget de lien Calendly -->
 
 	<main>
-		<header class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center">
-			<div class="relative mx-auto w-full max-w-[1440px] flex justify-between align-center">
-				<img class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none" src="/alzo.svg" alt=""/>
-				<button class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand hover:bg-brand text-white rounded-full"
-				onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
+		<header
+			class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center"
+		>
+			<div
+				class="relative mx-auto w-full max-w-[1440px] flex justify-between align-center"
+			>
+				<img
+					class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none"
+					src="/alzo.svg"
+					alt=""
+				/>
+				<button
+					class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand hover:bg-brand text-white rounded-full"
+					onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;"
+					>Prendre rendez-vous</button
+				>
 			</div>
 		</header>
-		<section class="bg-brand/80 text-white pt-20 md:pt-28 text-center p-4 md:p-10 shadow-md overflow-hidden relative">
-			<h1 class="md:text-6xl text-2xl leading-none">Mémoire d'agence<br/>et accélérateur de communication</h1>
+		<section
+			class="bg-brand/80 text-white pt-20 md:pt-28 text-center p-4 md:p-10 shadow-md overflow-hidden relative"
+		>
+			<h1 class="md:text-6xl text-2xl leading-none">
+				Mémoire d'agence<br />et accélérateur de communication
+			</h1>
 			<div class="relative mx-auto w-full max-w-[1440px]">
-				<img src="/screen.png" class="shadow-md relative -bottom-4 md:-bottom-16 w-[75%] max-w-[840px] h-auto mx-auto" alt="">
+				<img
+					src="/screen.png"
+					class="shadow-md relative -bottom-4 md:-bottom-16 w-[75%] max-w-[840px] h-auto mx-auto"
+					alt=""
+				/>
 			</div>
 		</section>
-		<div class="bg-[#E7ECC8] flex min-w-full px-10 overflow-x-scroll overflow-y-visible py-4 md:py-10 gap-4 md:gap-8 text-xs md:justify-center">
-			<video src="/videos/fiches_a4.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-			<video src="/videos/liste_refs.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-			<video src="/videos/fiches_a3.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
-			<video src="/videos/alzo_web.mp4" playsinline muted autoplay loop class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl" style="transition-duration: 1s"></video>
+		<div
+			class="bg-[#E7ECC8] flex min-w-full px-10 overflow-x-scroll overflow-y-visible py-4 md:py-10 gap-4 md:gap-8 text-xs md:justify-center"
+		>
+			<video
+				src="/videos/fiches_a4.mp4"
+				playsinline
+				muted
+				autoplay
+				loop
+				class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl"
+				style="transition-duration: 1s"></video>
+			<video
+				src="/videos/liste_refs.mp4"
+				playsinline
+				muted
+				autoplay
+				loop
+				class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl"
+				style="transition-duration: 1s"></video>
+			<video
+				src="/videos/fiches_a3.mp4"
+				playsinline
+				muted
+				autoplay
+				loop
+				class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl"
+				style="transition-duration: 1s"></video>
+			<video
+				src="/videos/alzo_web.mp4"
+				playsinline
+				muted
+				autoplay
+				loop
+				class="z-20 basis-60 shrink-0 h-34 object-cover border border-white transition-opacity rounded-md overflow-hidden shadow-6xl"
+				style="transition-duration: 1s"></video>
 		</div>
-		<section class="bg-[#F8F6F2] shadow-2xl text-[#FF4000] p-4 md:p-10 overflow-hidden relative">
+		<section
+			class="bg-[#F8F6F2] shadow-2xl text-[#FF4000] p-4 md:p-10 overflow-hidden relative"
+		>
 			<div class="relative mx-auto w-full max-w-[1440px] pb-[60px]">
-			<h1 class="fs-t1 mb-16 text-center max-w-[25ch] mx-auto">Vos projets, documents, références, site web, et bien plus, <strong class="underlined">bien rangés</strong> et <strong class="underlined">toujours à jour</strong></h1>
-			<hr class="border-none h-[1px] bg-brand"> 
-			<div class="flex flex-col md:flex-row my-8 md:my-20 align-center justify-between">
-				<div class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center">
-					<h2 class="md:text-5xl mb-4 text-2xl">Communiquez efficacement</h2>
-					<p class="md:text-xl text-base max-w-[45ch]">
-						À partir de votre base de données, générez en quelques secondes vos présentations, fiches projet, listes de références, CV, kits presse, books, et bien plus, tout en respectant votre identité visuelle.
-					</p>
-				</div>
-				<div class="basis-1/2 p-2">
-					<img class="w-[65%] h-auto mx-auto mt-4 md:mt-0" style="filter:contrast(5)" src="/decals/magic.png">
-				</div>
-			</div>
-			<hr class="border-none h-[1px] bg-brand"> 
-			<div class="flex flex-col md:flex-row my-20 align-center justify-between">
-				<div class="basis-1/2 p-0 md:p-2 text-left order-0 md:order-1 flex flex-col justify-center">
-					<h2 class="md:text-5xl mb-4 text-2xl">Ne perdez plus rien</h2>
-					<p class="max-w-[45ch] text-base md:text-xl">
-						Plus de tableaux excel, documents word, disque dur dans un tiroir, dossiers perdus sur votre serveur...  Promenez-vous dans vos réalisations pour soutenir votre culture architecturale.<br/>
-• Recherche intelligente<br/>• Filtrage de vos projets par échelle, intervenants, chronologie, matériaux, parti-pris formels, et plus encore.<br/>• Exploration de vos données pour en dégager des tendances et  statistiques. 
-					</p>
-				</div>
-				<div class="basis-1/2 p-2">
-					<img class="w-[50%] mt-4 md:mt-0 h-auto mx-auto" style="filter:contrast(5)" src="/decals/map.png">
-				</div>
-			</div>
-		</div>
-		</section>
-		<section class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative">
-			<div class="relative mx-auto w-full max-w-[1440px]">
-			<h1 class="text-2xl md:text-6xl mb-4 text-center">Au service des architectes depuis 2015</h1>
-			<p class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12">Alzo synthétise 8 ans d'expérience auprès d'agences d'échelles et activités variées en un produit durable et évolutif.</p>
-			</div>
-			<div class="relative mx-auto w-full max-w-[1440px]">
-			<div class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-[#0085C8] text-xs">
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/tikoam.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
+				<h1 class="fs-t1 mb-16 text-center max-w-[25ch] mx-auto">
+					Vos projets, documents, références, site web, et bien plus, <strong
+						class="underlined">bien rangés</strong
+					> et <strong class="underlined">toujours à jour</strong>
+				</h1>
+				<hr class="border-none h-[1px] bg-brand" />
+				<div
+					class="flex flex-col md:flex-row my-8 md:my-20 align-center justify-between"
+				>
+					<div
+						class="basis-1/2 p-0 md:p-2 text-left flex flex-col justify-center"
+					>
+						<h2 class="md:text-5xl mb-4 text-2xl">
+							Communiquez efficacement
+						</h2>
+						<p class="md:text-xl text-base max-w-[45ch]">
+							À partir de votre base de données, générez en
+							quelques secondes vos présentations, fiches projet,
+							listes de références, CV, kits presse, books, et
+							bien plus, tout en respectant votre identité
+							visuelle.
+						</p>
 					</div>
-					<h3 class="fs-t4 mb-4">Tikoam</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Remplacement total d'inDesign pour l'agence Tikoam par un outil sur-mesure pour composer des mémoires techniques et portfolios à plusieurs, à la vitesse de l'éclair.</p>
-				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/sequences.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
+					<div class="basis-1/2 p-2">
+						<img
+							class="w-[65%] h-auto mx-auto mt-4 md:mt-0"
+							style="filter:contrast(5)"
+							src="/decals/magic.png"
+						/>
 					</div>
-					<h3 class="fs-t4 mb-4">Séquences</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Base de données métier complète on-prem, édition multisupports avancée, multi-utilisateur, API publique, sites web autogénérés, extensibilité.<br/><strong class="underlined">La première instance d'Alzo !</strong></p>
 				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/amm.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
+				<hr class="border-none h-[1px] bg-brand" />
+				<div
+					class="flex flex-col md:flex-row my-20 align-center justify-between"
+				>
+					<div
+						class="basis-1/2 p-0 md:p-2 text-left order-0 md:order-1 flex flex-col justify-center"
+					>
+						<h2 class="md:text-5xl mb-4 text-2xl">
+							Ne perdez plus rien
+						</h2>
+						<p class="max-w-[45ch] text-base md:text-xl">
+							Plus de tableaux excel, documents word, disque dur
+							dans un tiroir, dossiers perdus sur votre serveur...
+							Promenez-vous dans vos réalisations pour soutenir
+							votre culture architecturale.<br />
+							• Recherche intelligente<br />• Filtrage de vos
+							projets par échelle, intervenants, chronologie,
+							matériaux, parti-pris formels, et plus encore.<br
+							/>• Exploration de vos données pour en dégager des
+							tendances et statistiques.
+						</p>
 					</div>
-					<h3 class="fs-t4 mb-4">Architecture Malacan Martres</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Automatisation des supports de présentation concours et site web via un backoffice unifié.</p>
-				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/duffau.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
+					<div class="basis-1/2 p-2">
+						<img
+							class="w-[50%] mt-4 md:mt-0 h-auto mx-auto"
+							style="filter:contrast(5)"
+							src="/decals/map.png"
+						/>
 					</div>
-					<h3 class="fs-t4 mb-4">Duffau &Associés</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Automatisation des supports de présentation concours et site web via un backoffice unifié, génération d'images, pipeline d'édition de books remplaçant inDesign.</p>
 				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/lcr.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
-					</div>
-					<h3 class="fs-t4 mb-4">LCR Architectes</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Automatisation des supports de présentation et site web via un backoffice unifié.</p>
-				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/scalene.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
-					</div>
-					<h3 class="fs-t4 mb-4">Scalène</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Base de données métier complète, édition multisupports avancée, API publique, sites web autogénérés. Un projet précurseur d'alzo !</p>
-				</div>
-				<div class="p-4 flex flex-col items-center text-center" style="flex: 0 0 300px">
-					<div class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center">
-						<img src="/logos/execo.png" class="w-16 h-16 object-contain opacity-75" style="filter: grayscale(1); background-blend-mode: screen;">
-					</div>
-					<h3 class="fs-t4 mb-4">Execo</h3>
-					<p class="fs-t5 text-center text-[#0085C8]/70">Automatisation de supports de présentations.</p>
-				</div>
-			</div>
 			</div>
 		</section>
-		<section class="bg-isabelline text-brand text-center p-4 md:p-10 overflow-hidden relative">
-			<h2 class="md:text-6xl text-2xl ">Fonctionnalités</h2>
-				<div class="mb-12 md:mb-40">
-				<h3 class="md:text-6xl text-2xl  mb-4 mt-8">mémoire d'agence</h3>
+		<section
+			class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative"
+		>
+			<div class="relative mx-auto w-full max-w-[1440px]">
+				<h1 class="text-2xl md:text-6xl mb-4 text-center">
+					Au service des architectes depuis 2015
+				</h1>
+				<p
+					class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12"
+				>
+					Alzo synthétise 8 ans d'expérience auprès d'agences
+					d'échelles et activités variées en un produit durable et
+					évolutif.
+				</p>
+			</div>
+			<div class="relative mx-auto w-full max-w-[1440px]">
+				<div
+					class="flex my-4 px-10 -mx-10 overflow-x-scroll overflow-y-visible py-2 md:py-10 gap-8 text-[#0085C8] text-xs"
+				>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/tikoam.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Tikoam</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Remplacement total d'inDesign pour l'agence Tikoam
+							par un outil sur-mesure pour composer des mémoires
+							techniques et portfolios à plusieurs, à la vitesse
+							de l'éclair.
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/sequences.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Séquences</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Base de données métier complète on-prem, édition
+							multisupports avancée, multi-utilisateur, API
+							publique, sites web autogénérés, extensibilité.<br
+							/><strong class="underlined"
+								>La première instance d'Alzo !</strong
+							>
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/amm.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Architecture Malacan Martres</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Automatisation des supports de présentation concours
+							et site web via un backoffice unifié.
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/duffau.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Duffau &Associés</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Automatisation des supports de présentation concours
+							et site web via un backoffice unifié, génération
+							d'images, pipeline d'édition de books remplaçant
+							inDesign.
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/lcr.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">LCR Architectes</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Automatisation des supports de présentation et site
+							web via un backoffice unifié.
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/scalene.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Scalène</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Base de données métier complète, édition
+							multisupports avancée, API publique, sites web
+							autogénérés. Un projet précurseur d'alzo !
+						</p>
+					</div>
+					<div
+						class="p-4 flex flex-col items-center text-center"
+						style="flex: 0 0 300px"
+					>
+						<div
+							class="w-32 h-32 mb-4 rounded-full bg-white flex justify-center items-center"
+						>
+							<img
+								src="/logos/execo.png"
+								class="w-16 h-16 object-contain opacity-75"
+								style="filter: grayscale(1); background-blend-mode: screen;"
+							/>
+						</div>
+						<h3 class="fs-t4 mb-4">Execo</h3>
+						<p class="fs-t5 text-center text-[#0085C8]/70">
+							Automatisation de supports de présentations.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="bg-isabelline text-brand text-center p-4 md:p-10 overflow-hidden relative"
+		>
+			<h2 class="md:text-6xl text-2xl">Fonctionnalités</h2>
+			<div class="mb-12 md:mb-40">
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8">Mémoire d'agence</h3>
 				<div class="relative inline-block md:min-w-[540px]">
-				<table class="table text-xs md:text-base relative z-10 shadow-xl rounded-md md:max-w-[540px] table-zebra mx-auto bg-white">
-					<tbody>
-						<tr>
-							<td>Saisie des projets</td>	<td>Carnet d’adresses</td>
-<tr><td>Annotation collaborative</td>	<td>Classement personnalisé</td></tr>
-<tr><td>Recherche intuitive</td>	<td>Aide au remplissage</td></tr>
-<tr><td><span class="soon">Statistiques</span></td>	<td>Suivi de la qualité des données</td></tr>
-<tr><td>Visualisations 3D</td>	<td>Visualisations en carte</td></tr>
-						</tr>
-					</tbody>
-				</table>
-				<img src="/decals/mem_left.png" class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[105%] bottom-0 h-60" alt="">
-						<img src="/decals/mem_right.png" class="opacity-0 md:opacity-100  absolute right-0 translate-x-[105%] bottom-0 h-60" alt="">
+					<table
+						class="text-xs md:text-base text-left relative z-10 rounded-md md:max-w-[540px] mx-auto"
+					>
+						<tbody>
+							<tr>
+								<td class="border-brand border-y py-2 px-4"
+									>Saisie des projets</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Carnet d’adresses</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Annotation collaborative</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Classement personnalisé</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Recherche intuitive</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Aide au remplissage</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									><span class="soon">Statistiques</span></td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Suivi de la qualité des données</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Visualisations 3D</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Visualisations en carte</td
+								></tr
+							>
+						</tbody>
+					</table>
+					<img
+						src="/decals/mem_left.png"
+						class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[105%] bottom-0 h-60"
+					/>
+					<img
+						src="/decals/mem_right.png"
+						class="opacity-0 md:opacity-100 absolute right-0 translate-x-[105%] bottom-0 h-60"
+					/>
 				</div>
 			</div>
 
-
 			<div class="mb-12 md:mb-40">
-					<h2 class="md:text-6xl text-2xl mb-0 md:mb-4 ">générateurs de documents et sites web</h3>
-				<p class="max-w-[80ch] text-xs md:text-base text-left mx-auto mb-2">La génération des supports marqués d'un ⦿ est mise en place sur demande, en équipe avec vos graphistes et communiquants, afin de respecter au mieux votre identité visuelle et vos besoins en communication. Ensuite, vous êtes totalement autonome dans la génération de ces supports.</p>
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8">
+					Générateurs de documents et sites web
+				</h3>
+				<p
+					class="max-w-[60ch] text-xs md:text-base text-left mx-auto mb-2"
+				>
+					La génération des supports marqués d'un ⦿ est mise en place
+					sur demande, en équipe avec vos graphistes et communiquants,
+					afin de respecter au mieux votre identité visuelle et vos
+					besoins en communication. Ensuite, vous êtes totalement
+					autonome dans la génération de ces supports.
+				</p>
 				<div class="relative inline-block md:min-w-[600px]">
-				<table class="table text-xs md:text-base relative z-10 shadow-xl  rounded-md max-w-[600px] table-zebra mx-auto bg-white">
-					<tbody>
-						<tr>
-<tr><td><span class="bullet-needscustom">⦿</span> Fiches projet</td>	<td><span class="bullet-needscustom">⦿</span> Génération de sites web</td></tr>
-<tr><td><span class="bullet-needscustom">⦿</span> CV adaptés aux réponses concours</td>	<td><span class="bullet-needscustom">⦿</span> Dossiers de candidatures</td></tr>
-<tr><td><span class="bullet-needscustom">⦿</span> Listes de références</td>	<td><span class="bullet-needscustom">⦿</span> Mémoires techniques</td></tr>
-<tr><td>Kits d’assets pour la presse</td>	<td><span class="bullet-needscustom">⦿</span> Présentations d’agence</td></tr>
-<tr><td><span class="bullet-needscustom">⦿</span> Génération de posts pour les réseaux</td>	<td>Listes de contacts</td></tr>
-<tr><td><span class="bullet-needscustom">⦿</span> Portfolio / booklet	Micro-éditions</td><td>Et <u>tout support sur mesure !</u></td></tr>
-						</tr>
-					</tbody>
-				</table>
-					<img src="/decals/gen_left.png" class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[102%] -bottom-6 h-80" alt="">
-					<img src="/decals/gen_right.png" class="opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 h-80" alt="">
+					<table class="text-xs md:text-base relative z-10 max-w-[600px] text-left mx-auto">
+						<tbody>
+							<tr><td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Fiches
+									projet</td>
+								<td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Génération de sites web</td>
+							</tr>
+							<tr><td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> CV adaptés aux réponses concours</td>
+
+								<td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Mémoires techniques</td></tr>
+							<tr><td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Listes de références</td>
+								<td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Présentations d’agence</td></tr> 
+							<tr ><td class="border-brand border-y py-2 px-4">Kits d’assets pour la presse</td>
+								<td class="border-brand border-y py-2 px-4"	>Listes de contacts</td></tr>
+							<tr ><td class="border-brand border-y py-2 px-4"	><span class="bullet-needscustom">⦿</span> Génération de posts pour les réseaux</td>
+								<td class="border-brand border-y py-2 px-4">Et <u>tout support sur mesure&nbsp;!</u></td></tr>
+							<tr><td class="border-brand border-y py-2 px-4"><span class="bullet-needscustom">⦿</span> Portfolio / booklet Micro-éditions</td></tr>
+						</tbody>
+					</table>
+					<img
+						src="/decals/gen_left.png"
+						class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[102%] -bottom-6 h-80"
+						alt=""
+					/>
+					<img
+						src="/decals/gen_right.png"
+						class="opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 h-80"
+						alt=""
+					/>
 				</div>
-				<p class="mt-4 max-w-[80ch] text-xs text-left md:text-base mx-auto mb-2">Cette liste n'est pas exhaustive mais s'appuie sur des demandes  d'agences avec qui nous travaillons actuellement. Nous pouvons créer  pour vous tout type d'application à brancher à alzo pour générer des  documents pdf, word, excel, des sites internet, s'interconnecter avec  d'autres CRM ou ERP, et exploitant votre base de données structurée.</p>
+				<p
+					class="mt-4 max-w-[60ch] text-xs text-left md:text-base mx-auto mb-2"
+				>
+					Cette liste n'est pas exhaustive mais s'appuie sur des
+					demandes d'agences avec qui nous travaillons actuellement.
+					Nous pouvons créer pour vous tout type d'application à
+					brancher à alzo pour générer des documents pdf, word, excel,
+					des sites internet, s'interconnecter avec d'autres CRM ou
+					ERP, et exploitant votre base de données structurée.
+				</p>
 			</div>
 
 			<div class="mb-12 md:mb-40">
-					<h2 class="md:text-6xl text-2xl mb-0 md:mb-4 ">collaboration</h3>
-					<div class="relative inline-block md:min-w-[700px]">
-						<img src="/decals/collab_left.png" class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[104%] bottom-8 w-80" alt="">
-						<img src="/decals/collab_right.png" class="opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 w-64" alt="">
-						<table class="table text-xs md:text-base shadow-xl  rounded-md max-w-[700px] table-zebra mx-auto bg-white">
-							<tbody>
-								<tr><td>Notifications de changements sur des projets</td>	<td><span class="soon">Recherche via bot Teams / Slack / Discord</span></td></tr>
-								<tr><td>Privilèges par-projet et par-outil</td>	<td>Suggestion collaborative d’étiquettes</td></tr>
-								<tr><td><span class="soon">Tableaux de références et moodboards</span></td>	<td><span class="soon">Notifications via bot Teams / Slack / Discord</span></td></tr>		
-							</tbody>
-						</table>
-					</div>
+				<h3 class="md:text-4xl text-2xl mb-4 mt-8">Collaboration</h3>
+				<div class="relative inline-block md:min-w-[700px]">
+					<img
+						src="/decals/collab_left.png"
+						class="opacity-0 md:opacity-100 absolute left-0 -translate-x-[104%] bottom-8 w-80"
+						alt=""
+					/>
+					<img
+						src="/decals/collab_right.png"
+						class="opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 w-64"
+						alt=""
+					/>
+					<table
+						class="text-xs md:text-base text-left max-w-[700px] mx-auto"
+					>
+						<tbody>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Notifications de changements sur des
+									projets</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									><span class="soon"
+										>Recherche via bot Teams / Slack /
+										Discord</span
+									></td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Privilèges par-projet et par-outil</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>Suggestion collaborative d’étiquettes</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									><span class="soon"
+										>Tableaux de références et moodboards</span
+									></td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									><span class="soon"
+										>Notifications via bot Teams / Slack /
+										Discord</span
+									></td
+								></tr
+							>
+						</tbody>
+					</table>
 				</div>
+			</div>
 
-				<div class="relative w-full pb-10 pt-30 pb-30">
-					<div class="relative z-10 inline-block">
-						<h2 class="md:text-6xl text-2xl mb-0 md:mb-4 ">intégration et technique</h3>
-						<table class="table text-xs md:text-base shadow-xl rounded-md max-w-[700px] table-zebra mx-auto bg-white">
-							<tbody>
-								<tr><td>Webhooks sortants</td>	<td>API en lecture, privilèges par-client</td></tr>
-								<tr><td>Hébergement on-prem sur demande</td> <td class="soon">SSO</td></tr>
-							</tbody>
-						</table>
-						<img src="/decals/gears.png" class="opacity-100 absolute left-0 -translate-x-[104%] bottom-20 w-40" alt="">
-						<img src="/decals/work.png" class="opacity-0 md:opacity-100  absolute right-0 translate-x-[108%] -bottom-12 w-40" alt="">
-					</div>
+			<div class="relative w-full pb-10 pt-30 pb-30">
+				<div class="relative z-10 inline-block">
+					<h3 class="md:text-4xl text-2xl mb-4 mt-8">
+						Intégrations et technique
+					</h3>
+					<table
+						class="table text-xs md:text-base max-w-[700px] text-left mx-auto"
+					>
+						<tbody>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Webhooks sortants</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									>API en lecture, privilèges par-client</td
+								></tr
+							>
+							<tr
+								><td class="border-brand border-y py-2 px-4"
+									>Hébergement on-prem sur demande</td
+								>
+								<td class="border-brand border-y py-2 px-4"
+									><span class="soon">SSO</span></td
+								></tr
+							>
+						</tbody>
+					</table>
+					<img
+						src="/decals/gears.png"
+						class="opacity-100 absolute left-0 -translate-x-[104%] bottom-20 w-40"
+						alt=""
+					/>
+					<img
+						src="/decals/work.png"
+						class="opacity-0 md:opacity-100 absolute right-0 translate-x-[108%] -bottom-12 w-40"
+						alt=""
+					/>
 				</div>
-		</section>
-		<section class="bg-[#7D8922] shadow-2xl text-[#EEF3CE] ext-center p-4 md:p-10 overflow-hidden relative">
-			<p class="fs-t6 mb-4 max-w-[50ch] mx-auto text-center">
-				Alzo comprend de nombreuses fonctionnalités. Comme chaque agence est différente, nous réalisons des extensions sur demande pour répondre à des besoins spécifiques.
-			</p>
-		</section>
-		<section class="bg-[#EEF3CE] shadow-2xl text-[#7D8922] ext-center p-4 md:p-10 overflow-hidden relative">
-			<h1 class="fs-t1 mb-4 text-center">Services complémentaires</h1>
-			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps de remplir les données, prendre en main l'outil, ou bien vous pensez qu'il vous manque une fonctionnalité ?</p>
-			<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">Nous pouvons venir sur place importer vos données de sources variées, vous former, échanger avec vous et développer des fonctionnalités sur mesure</p>
-		</section>
-		<section class="bg-[#FF4000] shadow-2xl text-[#F8F6F2] ext-center p-4 md:p-10 overflow-hidden relative">
-			<h1 class="fs-t1 mb-4 text-center">Discutons-en !</h1>
-			<p class="fs-t3  block mx-auto text-center">
-				Que vous soyez architecte, ou communiquant pour architectes, alzo peut vous aider.<br/>
-				Nous proposons des créneaux de 30 minutes en visio pour une première rencontre.
-			</p>
-			<button class="block btn btn-xl mx-auto relative top-1 mt-4 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-isabelline text-brand hover:bg-isabelline rounded-full"
-			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;">Prendre rendez-vous</button>
+			</div>
 		</section>
 	</main>
+	<section
+		class="bg-[#7D8922] shadow-2xl text-[#EEF3CE] ext-center p-4 md:p-10 overflow-hidden relative"
+	>
+		<p class="fs-t6 mb-4 max-w-[50ch] mx-auto text-center">
+			Alzo comprend de nombreuses fonctionnalités. Comme chaque agence est
+			différente, nous réalisons des extensions sur demande pour répondre
+			à des besoins spécifiques.
+		</p>
+	</section>
+	<section
+		class="bg-[#EEF3CE] shadow-2xl text-[#7D8922] ext-center p-4 md:p-10 overflow-hidden relative"
+	>
+		<h1 class="fs-t1 mb-4 text-center">Services complémentaires</h1>
+		<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">
+			Alzo vous intéresse, mais vous ne savez pas si vous aurez le temps
+			de remplir les données, prendre en main l'outil, ou bien vous pensez
+			qu'il vous manque une fonctionnalité ?
+		</p>
+		<p class="text-xl mb-4 mx-auto max-w-[65ch] text-center">
+			Nous pouvons venir sur place importer vos données de sources
+			variées, vous former, échanger avec vous et développer des
+			fonctionnalités sur mesure
+		</p>
+	</section>
+	<section
+		class="bg-[#FF4000] shadow-2xl text-[#F8F6F2] ext-center p-4 md:p-10 overflow-hidden relative"
+	>
+		<h1 class="fs-t1 mb-4 text-center">Discutons-en !</h1>
+		<p class="fs-t3 block mx-auto text-center">
+			Que vous soyez architecte, ou communiquant pour architectes, alzo
+			peut vous aider.<br />
+			Nous proposons des créneaux de 30 minutes en visio pour une première
+			rencontre.
+		</p>
+		<button
+			class="block btn btn-xl mx-auto relative top-1 mt-4 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-isabelline text-brand hover:bg-isabelline rounded-full"
+			onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;"
+			>Prendre rendez-vous</button
+		>
+	</section>
 </Layout>
