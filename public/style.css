@@ -95,12 +95,10 @@ span.bullet-needscustom {
 }
 
 @media screen and (max-width: 767px) {
-    
-
 .fs-t1 {
     font-family: "Karrik";
-    font-size: calc(50px * 0.6);
-    line-height: calc(55px * 0.6);
+    font-size: calc(50px * 0.5);
+    line-height: calc(55px * 0.5);
 }
 .fs-t2 {
     font-family: "Karrik";
@@ -109,8 +107,8 @@ span.bullet-needscustom {
 }
 .fs-t3 {
     font-family: "Inter";
-    font-size: calc(20px * 0.6);
-    line-height: calc(24px * 0.6);
+    font-size: calc(20px * 0.7);
+    line-height: calc(24px * 0.7);
 }
 .fs-t4 {
     font-family: "Karrik";
@@ -124,7 +122,7 @@ span.bullet-needscustom {
 }
 .fs-t6 {
     font-family: "Karrik";
-    font-size: 25px;
-    line-height: 28px;
+    font-size: calc(25px * 0.7);
+    line-height: calc(28px * 0.7);
 }
 }
