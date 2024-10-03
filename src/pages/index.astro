@@ -36,16 +36,17 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</header>
 		<div id="new-agency-popover" class="fixed z-30 bottom-2 shadow-2xl left-[50%] p-4 -translate-x-[50%] border border-carolinablue bg-[#DCF0FF] text-[#0085C8] rounded-xl w-full max-w-[300px]">
-			<h3 class="text-md relative -top-1">Jeune agence ?</h3>
+			<h3 class="text-md relative -top-1">Jeune agence ou bureau d'étude ?</h3>
 			<p class="text-sm leading-tight">Adopter alzo au début de votre parcours vous aidera à naviguer la pratique des marchés publics.<br/>Nous adaptons nos tarifs pour les jeunes agences et collectifs.</p>
 			<button class="absolute bg-none border-none top-2 right-4" onclick="document.querySelector('#new-agency-popover').style.display = 'none'">&times;</button>
 		</div>
 		<section
 			class="bg-brand/80 text-white pt-20 md:pt-28 text-center p-4 md:p-10 shadow-md overflow-hidden relative"
 		>
-			<h1 class="md:text-6xl text-xl leading-none">
+			<h1 class="md:text-4xl xl:text-6xl text-xl leading-none">
 				La mémoire d'agence<br/>qui accélère votre communication <br/>et&nbsp;vos&nbsp;réponses&nbsp;aux&nbsp;marchés&nbsp;publics
 			</h1>
+			<h2 class="text-md md:text-xl">Pour architectes et bureaux d'études</h2>
 			<div class="relative mx-auto w-full max-w-[1440px]">
 				<img
 					src="/screen.png"
@@ -157,13 +158,13 @@ import Layout from "../layouts/Layout.astro";
 			class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative"
 		>
 			<div class="relative mx-auto w-full max-w-[1440px]">
-				<h2 class="text-xl md:text-6xl mb-4 text-center">
-					Au service des architectes depuis&nbsp;2015
+				<h2 class="text-xl md:text-4xl mb-4 text-center leading-tight">
+					Au service des architectes et bureaux&nbsp;d'études&nbsp;depuis&nbsp;2015
 				</h2>
 				<p
-					class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12"
+					class="text-center max-w-[55ch] text-base md:text-2xl mx-auto mb-0 md:mb-12 leading-tight"
 				>
-					Alzo synthétise 8 ans d'expérience auprès d'agences d'architecture
+					Alzo synthétise 8 ans d'expérience auprès d'agences d'architecture et bureaux d'études
 					d'échelles et activités variées en un produit durable et
 					évolutif.
 				</p>
@@ -326,7 +327,7 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 
 		<section
-			class="bg-isabelline text-brand text-center p-4 md:p-10 relative"
+			class="bg-isabelline text-brand text-center p-4 md:p-10 relative w-full overflow-x-hidden"
 		>
 			<h2 class="md:text-6xl text-4xl mb-8">Fonctionnalités</h2>
 
@@ -350,22 +351,30 @@ import Layout from "../layouts/Layout.astro";
 				<div class="relative inline-block md:min-w-[600px]">
 					<table class="text-xs md:text-base relative z-10 max-w-[600px] text-left mx-auto">
 						<tbody>
-							<tr><td class="border-brand border-y py-2 px-4">Fiches
-									projet</td>
+							<tr>
+								<td class="border-brand border-y py-2 px-4">Fiches projet</td>
 								<td class="border-brand border-y py-2 px-4">Génération de sites web</td>
 							</tr>
-							<tr><td class="border-brand border-y py-2 px-4">CV adaptés aux réponses concours</td>
-								<td class="border-brand border-y py-2 px-4">Mémoires techniques</td></tr>
-							<tr><td class="border-brand border-y py-2 px-4">Listes de références</td>
-								<td class="border-brand border-y py-2 px-4">Présentations d’agence</td></tr> 
-							<tr ><td class="border-brand border-y py-2 px-4">Kits d’assets pour la presse</td>
-								<td class="border-brand border-y py-2 px-4">Listes de contacts</td></tr>
-							<tr ><td class="border-brand border-y py-2 px-4">Génération de posts pour les réseaux</td>
+							<tr>
+								<td class="border-brand border-y py-2 px-4">CV adaptés aux réponses concours</td>
+								<td class="border-brand border-y py-2 px-4">Mémoires techniques</td>
+							</tr>
+							<tr>
+								<td class="border-brand border-y py-2 px-4">Listes de références</td>
+								<td class="border-brand border-y py-2 px-4">Présentations d’agence</td>
+							</tr> 
+							<tr>
+								<td class="border-brand border-y py-2 px-4">Kits d’assets pour la presse</td>
+								<td class="border-brand border-y py-2 px-4">Listes de contacts</td>
+							</tr>
+							<tr>
+								<td class="border-brand border-y py-2 px-4">Génération de posts pour les réseaux</td>
 								<td class="border-brand border-y py-2 px-4">Micro-éditions</td>
-								</tr>
-							<tr><td class="border-brand border-y py-2 px-4">Portfolio ou booklet</td>
+							</tr>
+							<tr>
+								<td class="border-brand border-y py-2 px-4">Portfolio ou booklet</td>
 								<td class="border-brand border-y py-2 px-4">Et tout support sur mesure&nbsp;!</td>
-								</tr>
+							</tr>
 						</tbody>
 					</table>
 					<img
@@ -623,8 +632,8 @@ import Layout from "../layouts/Layout.astro";
 			window.__trigger_nl = function() {
 				postMessage({eventId: 'openWidgetModal', widgetId: "ba704ae7be8ce126ce90"});
 			};
-			</script>
-<script type="text/javascript" src="https://app.mailjet.com/pas-nc-pop-in-v1.js"></script>
+		</script>
+		<script type="text/javascript" src="https://app.mailjet.com/pas-nc-pop-in-v1.js"></script>
 		<button
 			class="block btn btn-xl mx-auto relative top-1 mt-4 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-isabelline text-brand hover:bg-isabelline rounded-full"
 			onclick="__trigger_nl();"
