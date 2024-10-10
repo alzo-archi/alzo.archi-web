@@ -327,7 +327,7 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 
 		<section
-			class="bg-isabelline text-brand text-center p-4 md:p-10 relative w-full overflow-x-hidden"
+			class="bg-isabelline text-brand text-center py-10 relative w-full"
 		>
 			<h2 class="md:text-6xl text-4xl mb-8">Fonctionnalités</h2>
 
@@ -338,6 +338,7 @@ import Layout from "../layouts/Layout.astro";
 				<a href="#integration-technique" data-fades-by-scroll="" class="border border-brand transition rounded-full p-2">Intégrations et technique</a>
 			</div>
 
+			<div class="-mx-4 w-full overflow-hidden">
 			<div class="mb-12 md:mb-40">
 				<h3 class="md:text-4xl text-xl leading-none mb-4 mt-8" id="gen-documents">
 					Générateurs de documents et&nbsp;sites&nbsp;web
@@ -540,6 +541,11 @@ import Layout from "../layouts/Layout.astro";
 									><span class="soon">SSO</span></td
 								></tr
 							>
+							<tr>
+								<td class="border-brand border-y py-2 px-4"
+								>2FA via TOTP</td
+							><td></td>
+							</tr>
 						</tbody>
 					</table>
 					<img
@@ -554,6 +560,7 @@ import Layout from "../layouts/Layout.astro";
 					/>
 				</div>
 			</div>
+		</div>
 		</section>
 		<script is:inline>
 			(function() {
