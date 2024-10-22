@@ -654,48 +654,118 @@ import Layout from "../layouts/Layout.astro";
 				<h2 class="text-xl md:text-5xl mb-4 text-center">
 					Questions fréquentes
 				</h2>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: Mes documents ressembleront-ils aux exemples montrés sur votre site ?</em><br/>
-					R: Non ! Ce ne sont que des exemples. Les supports seront conçus pour vous sur mesure.
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: Les marchés publics à cadre type fixé par le maître d'ouvrage n'utilisent pas ces documents.</em><br/>
-					R: Pour ces cas, nous vous proposons des exports Excel, Powerpoint, Word, ou ZIP bien rangés selon le format demandé par le MO, reprenant toutes les informations des projets choisis et leurs images. Vous gagnez du temps malgré le cadre type limitant.
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: Si une plateforme unique de dépôt de candidature voit le jour, les documents ne seront plus utiles.</em><br/>
-					R: Nous espérons qu'une telle plate-forme verra le jour, pour proposer dans Alzo des outils s'y connectant et accélérant encore plus vos candidatures !
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: J'ai d'autres types de documents en tête, les supports listés semblent limités.</em><br/>
-					R: Les exemples montrés ne sont pas exhaustifs ni limitants. Si vous avez des idées, nous pouvons les développer pour vous.
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: J'ai déjà un site web et n'aimerais pas rentrer les données deux fois, ni le refaire de zéro.</em><br/>
-					R: Nous pouvons importer les données de votre site pour pré-remplir Alzo, puis nourrir votre site avec Alzo, sous réserve que votre site en soit techniquement capable.
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: Si je décide de ne plus utiliser Alzo, que deviennent mes données ?</em><br/>
-					R: Vous êtes propriétaire de vos données. Vous pourrez les obtenir dans des formats ouverts (csv, json) sur simple demande, ou utiliser l'API d'Alzo pour les extraire vers un autre outil. Sur votre demande, nous effacerons tout.
-				</p>
-				<p
-					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto mb-4"
-				>
-					<em>Q: Si je fais mon site avec Alzo, est-ce que mes données restent privées ?</em><br/>
-					R: Oui. Vous choisissez intégralement ce que vous montrez sur votre site. Votre site est bien séparé d'Alzo, ne révèle pas que vous utilisez Alzo, et ne permet pas d'obtenir quoi-que-ce-soit qui n'y serait pas montré volontairement.
-				</p>
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-6 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Mes documents ressembleront-ils aux exemples montrés sur votre site ?</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Non ! Ce ne sont que des exemples.<br/>Les supports seront conçus pour vous sur mesure.
+					</p>
+				</div>
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-6 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Nos dossiers de presse nécessitent un travail au cas-par-cas par un.e graphiste.</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Nous préparons un plug-in inDesign pour retrouver tous vos contenus bien rangés directement dans inDesign, et proposons des exports ZIP d'images et informations projet pour cet usage.
+					</p>
+				</div>
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Les marchés publics à cadre type strict n'utilisent pas ces documents.</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Pour ces cas, nous vous proposons des exports Excel, Powerpoint, Word, ou ZIP bien rangés selon le format demandé par le MO, reprenant toutes les informations des projets choisis et leurs images. Vous gagnez du temps malgré le cadre type limitant.
+					</p>
+				</div>
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Si un site unique de candidature voit le jour, ces outils ne seront plus utiles ?</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Nous espérons qu'une telle plate-forme verra le jour, pour proposer dans Alzo des outils s'y connectant et accélérant encore plus vos candidatures !
+					</p>
+				</div>
+				
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">J'ai d'autres types de documents en tête, les supports listés semblent limités.</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Les exemples montrés ne sont pas exhaustifs ni limitants. Si vous avez des idées, nous pouvons les développer pour vous.
+					</p>
+				</div>
+
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">J'ai déjà un site web et ne souhaite pas le refaire.</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Nous pouvons importer les données de votre site pour pré-remplir Alzo, puis nourrir votre site avec Alzo, sous réserve que votre site en soit techniquement capable.
+					</p>
+				</div>
+
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Si je décide de ne plus utiliser Alzo, que deviennent mes données ?</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Vous êtes propriétaire de vos données. Vous pourrez les obtenir dans des formats ouverts (csv, json) sur simple demande, ou utiliser l'API d'Alzo pour les extraire vers un autre outil. Sur votre demande, nous effacerons tout.
+					</p>
+				</div>
+
+				<div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+					<p
+					class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-4 cursor-pointer"
+					aria-role="button"
+					>
+						<em class="text-white">Si je fais mon site avec Alzo, est-ce que mes données restent privées ?</em>
+						<span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator"></span>
+					</p>
+					<p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+						Oui. Vous choisissez intégralement ce que vous montrez sur votre site. Votre site est bien séparé d'Alzo, ne révèle pas que vous utilisez Alzo, et ne permet pas d'obtenir quoi-que-ce-soit qui n'y serait pas montré volontairement.
+					</p>
+				</div>
 			</div>
+			<script is:inline>
+				(function() {
+					var questions = document.querySelectorAll('.foldable_question');
+					questions.forEach(function(question) {
+						question.addEventListener('click', function() {
+							questions.forEach(function(q) { if (q !== question) { q.classList.remove('open'); q.querySelector('.answer').classList.remove('open'); }});
+							question.classList.toggle('open');
+							question.querySelector('.answer').classList.toggle('open');
+						});
+					});
+				})();
+			</script>
 		</section>
 </Layout>

@@ -126,3 +126,11 @@ span.bullet-needscustom {
     line-height: calc(28px * 0.7);
 }
 }
+
+.drawer_indicator::after {
+    content: "+";
+}
+
+.open .drawer_indicator::after {
+    content: "×";
+}
