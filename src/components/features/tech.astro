@@ -1,0 +1,42 @@
+---
+const strings = [
+    ["Webhooks sortants", "API en lecture, privilèges par-client"],
+    ["Hébergement on-prem sur demande", "Intégration à Adobe inDesign"],
+    ["2FA via TOTP", ""],
+];
+---
+
+<div class="relative w-full pb-10 pt-30 pb-30">
+    <div class="relative z-10 inline-block">
+        <h3 class="md:text-4xl text-xl mb-4 mt-8" id="integration-technique">
+            Intégrations et technique
+        </h3>
+        <table
+            class="table text-xs md:text-base max-w-[700px] text-left mx-auto"
+        >
+            <tbody>
+                {
+                    strings.map((s) => (
+                        <tr>
+                            {s.map((ss) => (
+                                <td class="border-brand border-y py-2 px-4">
+                                    {ss}
+                                </td>
+                            ))}
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+        <img
+            src="/decals/gears.png"
+            class="hidden md:block opacity-100 absolute left-0 -translate-x-[104%] bottom-20 w-40"
+            alt=""
+        />
+        <img
+            src="/decals/work.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute right-0 translate-x-[108%] -bottom-12 w-40"
+            alt=""
+        />
+    </div>
+</div>

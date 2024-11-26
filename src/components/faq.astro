@@ -1,0 +1,90 @@
+---
+const qanda = [
+    {
+        question: `Mes documents ressembleront-ils aux exemples montrés sur
+        votre site ?`,
+        answer: `Non ! Ce ne sont que des exemples.<br />Les supports seront
+    conçus pour vous sur mesure.`,
+    },
+    {
+        question:
+            "Nos dossiers de presse nécessitent un travail au cas-par-cas par un.e graphiste.",
+        answer: "Nous préparons un plug-in inDesign pour retrouver tous vos contenus bien rangés directement dans inDesign, et proposons des exports ZIP d'images et informations projet pour cet usage.",
+    },
+    {
+        question:
+            "Les marchés publics à cadre type strict n'utilisent pas ces documents.",
+        answer: "Pour ces cas, nous vous proposons des exports Excel, Powerpoint, Word, ou ZIP bien rangés selon le format demandé par le MO, reprenant toutes les informations des projets choisis et leurs images. Vous gagnez du temps malgré le cadre type limitant.",
+    },
+
+    {
+        question:
+            "Si un site unique de candidature voit le jour, ces outils ne seront plus utiles ?",
+        answer: "Nous espérons qu'une telle plate-forme verra le jour, pour proposer dans Alzo des outils s'y connectant et accélérant encore plus vos candidatures !",
+    },
+
+    {
+        question:
+            "J'ai d'autres types de documents en tête, les supports listés semblent limités.",
+        answer: "Les exemples montrés ne sont pas exhaustifs ni limitants. Si vous avez des idées, nous pouvons les développer pour vous.",
+    },
+
+    {
+        question: "J'ai déjà un site web et ne souhaite pas le refaire.",
+        answer: "Nous pouvons importer les données de votre site pour pré-remplir Alzo, puis nourrir votre site avec Alzo, sous réserve que votre site en soit techniquement capable.",
+    },
+    {
+        question:
+            "Si je décide de ne plus utiliser Alzo, que deviennent mes données ?",
+        answer: "Vous êtes propriétaire de vos données. Vous pourrez les obtenir dans des formats ouverts (csv, json) sur simple demande, ou utiliser l'API d'Alzo pour les extraire vers un autre outil. Sur votre demande, nous effacerons tout.",
+    },
+    {
+        question:
+            "Si je fais mon site avec Alzo, est-ce que mes données restent privées ?",
+        answer: "Oui. Vous choisissez intégralement ce que vous montrez sur votre site. Votre site est bien séparé d'Alzo et ne permet pas d'obtenir quoi-que-ce-soit qui n'y serait pas montré volontairement.",
+    },
+];
+---
+
+<section
+    class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative"
+>
+    <div class="relative mx-auto w-full max-w-[1440px]">
+        <h2 class="text-xl md:text-5xl mb-4 text-center">
+            Questions fréquentes
+        </h2>
+        {
+            qanda.map((qa) => (
+                <div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+                    <p
+                        class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-6 cursor-pointer"
+                        aria-role="button"
+                    >
+                        <em class="text-white">{qa.question}</em>
+                        <span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator" />
+                    </p>
+                    <p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
+                        {qa.answer}
+                    </p>
+                </div>
+            ))
+        }
+    </div>
+    <script is:inline>
+        (function () {
+            var questions = document.querySelectorAll(".foldable_question");
+            questions.forEach(function (question) {
+                question.addEventListener("click", function () {
+                    questions.forEach(function (q) {
+                        if (q !== question) {
+                            q.classList.remove("open");
+                            q.querySelector(".answer").classList.remove("open");
+                        }
+                    });
+                    question.classList.toggle("open");
+                    question.querySelector(".answer").classList.toggle("open");
+                });
+            });
+        })();
+    </script>
+</section>

@@ -1,0 +1,43 @@
+---
+const strings = [
+    ["Saisie des projets", "Carnet d’adresses"],
+    ["Annotation collaborative", "Classement personnalisé"],
+    ["Recherche intuitive", "Aide au remplissage"],
+    ["Statistiques", "Suivi de la qualité des données"],
+    ["Visualisations 3D", "Visualisations en carte"],
+    ["Historique de modifications inaltérable"],
+];
+---
+
+<div class="mb-12 md:mb-40">
+    <h3 class="md:text-4xl text-xl mb-4 mt-8" id="memoire-agence">
+        Mémoire d'agence
+    </h3>
+    <div class="relative inline-block md:min-w-[540px]">
+        <table
+            class="text-xs md:text-base text-left relative z-10 rounded-md md:max-w-[540px] mx-auto"
+        >
+            <tbody>
+                {
+                    strings.map((s) => (
+                        <tr>
+                            {s.map((ss) => (
+                                <td class="border-brand border-y py-2 px-4">
+                                    {ss}
+                                </td>
+                            ))}
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+        <img
+            src="/decals/mem_left.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute left-0 -translate-x-[105%] bottom-0 h-60"
+        />
+        <img
+            src="/decals/mem_right.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute right-0 translate-x-[105%] bottom-0 h-60"
+        />
+    </div>
+</div>

@@ -1,0 +1,59 @@
+---
+const strings = [
+    ["Fiches projet", "Génération de sites web"],
+    ["CV adaptés aux réponses concours", "Mémoires techniques"],
+    ["Listes de références", "Présentations d’agence"],
+    ["Kits d’assets pour la presse", "Listes de contacts"],
+    ["Génération de posts pour les réseaux", "Micro-éditions"],
+    ["Portfolio ou booklet", "Et tout support sur mesure !"],
+];
+---
+
+<div class="mb-12 md:mb-40">
+    <h3 class="md:text-4xl text-xl leading-none mb-4 mt-8" id="gen-documents">
+        Générateurs de documents et&nbsp;sites&nbsp;web
+    </h3>
+    <p class="max-w-[60ch] text-xs md:text-base text-left mx-auto mb-2">
+        Les outils de génération sont conçus en équipe avec vos communiquants,
+        afin de respecter votre identité graphique et votre communication. Ils
+        vous font gagner du temps, assurent votre cohérence graphique, et
+        garantissent la justesse des données lors de vos candidatures.
+    </p>
+    <div class="relative inline-block md:min-w-[600px]">
+        <table
+            class="text-xs md:text-base relative z-10 max-w-[600px] text-left mx-auto"
+        >
+            <tbody>
+                {
+                    strings.map((s) => (
+                        <tr>
+                            {s.map((ss) => (
+                                <td class="border-brand border-y py-2 px-4">
+                                    {ss}
+                                </td>
+                            ))}
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+        <img
+            src="/decals/gen_left.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute left-0 -translate-x-[102%] -bottom-6 h-80"
+            alt=""
+        />
+        <img
+            src="/decals/gen_right.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 h-80"
+            alt=""
+        />
+    </div>
+    <p class="mt-4 max-w-[60ch] text-xs text-left md:text-base mx-auto mb-2">
+        Nous pouvons créer tout type d'application sur-mesure avec&nbsp;alzo<span
+            class="hidden md:inline"
+        >
+            pour générer des documents pdf, word, excel, sites internet, se
+            connecter à votre CRM..</span
+        >.
+    </p>
+</div>

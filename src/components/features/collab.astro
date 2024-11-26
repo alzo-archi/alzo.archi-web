@@ -1,0 +1,56 @@
+---
+const strings = [
+    [
+        "Notifications de changements sur des projets",
+        { soon: true, content: "Recherche via bot Teams / Slack / Discord" },
+    ],
+    [
+        "Privilèges par-projet et par-outil",
+        "Suggestion collaborative d’étiquettes",
+    ],
+    [
+        { soon: true, content: "Tableaux de références et moodboards" },
+        {
+            soon: true,
+            content: "Notifications via bot Teams / Slack / Discord",
+        },
+    ],
+];
+---
+
+<div class="mb-12 md:mb-40">
+    <h3 class="md:text-4xl text-xl mb-4 mt-8" id="collaboration">
+        Collaboration
+    </h3>
+    <div class="relative inline-block md:min-w-[700px]">
+        <img
+            src="/decals/collab_left.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute left-0 -translate-x-[104%] bottom-8 w-80"
+            alt=""
+        />
+        <img
+            src="/decals/collab_right.png"
+            class="hidden md:block opacity-0 md:opacity-100 absolute right-0 translate-x-[104%] -bottom-4 w-64"
+            alt=""
+        />
+        <table class="text-xs md:text-base text-left max-w-[700px] mx-auto">
+            <tbody>
+                {
+                    strings.map((s) => (
+                        <tr>
+                            {s.map((ss) => (
+                                <td class="border-brand border-y py-2 px-4">
+                                    {typeof ss === "string" ? (
+                                        ss
+                                    ) : (
+                                        <span class="soon">{ss.content}</span>
+                                    )}
+                                </td>
+                            ))}
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+---
+import Menubar from "./features/menubar.astro";
+import Collab from "./features/collab.astro";
+import Generators from "./features/generators.astro";
+import Memory from "./features/memory.astro";
+import Tech from "./features/tech.astro";
+---
+
+<section class="bg-isabelline text-brand text-center py-10 relative w-full">
+    <h2 class="md:text-6xl text-4xl mb-8">Fonctionnalités</h2>
+
+    <Menubar />
+
+    <div class="p-4 w-full overflow-hidden">
+        <Generators />
+        <Memory />
+        <Collab />
+        <Tech />
+    </div>
+</section>
+<script is:inline>
+    (function () {
+        var heights_map = {
+            "gen-documents": 1,
+            "memoire-agence": 2,
+            collaboration: 3,
+            "integration-technique": 4,
+        };
+        var ordered_keys = [
+            "gen-documents",
+            "memoire-agence",
+            "collaboration",
+            "integration-technique",
+        ];
+        function setHeights() {
+            ordered_keys.forEach(function (key) {
+                var el = document.getElementById(key);
+                heights_map[key] =
+                    el.getBoundingClientRect().top +
+                    document.scrollingElement.scrollTop;
+            });
+        }
+
+        setHeights();
+        window.addEventListener("resize", setHeights);
+        window.addEventListener("scroll", function (e) {
+            var min = [false, 9999999999];
+            ordered_keys.forEach(function (key) {
+                var challenger = Math.abs(
+                    heights_map[key] - document.scrollingElement.scrollTop,
+                );
+                if (challenger < min[1]) {
+                    min = [key, challenger];
+                }
+            });
+            if (min[0]) {
+                document
+                    .querySelectorAll("[data-fades-by-scroll]")
+                    .forEach(function (el) {
+                        el.classList.remove("bg-brand", "text-white");
+                    });
+                var target = document.querySelector('[href="#' + min[0] + '"]');
+                if (target) {
+                    target.classList.add("bg-brand", "text-white");
+                }
+            }
+        });
+    })();
+</script>
