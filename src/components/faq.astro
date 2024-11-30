@@ -26,12 +26,12 @@ const qanda = [
     {
         question:
             "J'ai d'autres types de documents en tête, les supports listés semblent limités.",
-        answer: "Les exemples montrés ne sont pas exhaustifs ni limitants. Si vous avez des idées, nous pouvons les développer pour vous.",
+        answer: "Les exemples montrés ne sont pas exhaustifs ou limitants. Si vous avez des idées, nous pouvons les développer pour vous.",
     },
 
     {
         question: "J'ai déjà un site web et ne souhaite pas le refaire.",
-        answer: "Nous pouvons importer les données de votre site pour pré-remplir Alzo, puis nourrir votre site avec Alzo, sous réserve que votre site en soit techniquement capable.",
+        answer: "Nous pouvons importer les données de votre site pour pré-remplir Alzo, puis nourrir votre site avec Alzo, sous réserve que votre site soit techniquement adapté.",
     },
     {
         question:
@@ -41,7 +41,7 @@ const qanda = [
     {
         question:
             "Si je fais mon site avec Alzo, est-ce que mes données restent privées ?",
-        answer: "Oui. Vous choisissez intégralement ce que vous montrez sur votre site. Votre site est bien séparé d'Alzo et ne permet pas d'obtenir quoi-que-ce-soit qui n'y serait pas montré volontairement.",
+        answer: "Oui. Vous choisissez intégralement ce que vous montrez sur votre site. Votre site est séparé d'Alzo et ne permet pas d’accéder à des données que vous n'aurez pas décidé d'afficher publiquement.",
     },
 ];
 ---
@@ -50,22 +50,23 @@ const qanda = [
     class="bg-[#DCF0FF] text-[#0085C8] ext-center p-4 md:p-10 overflow-hidden relative"
 >
     <div class="relative mx-auto w-full max-w-[1440px]">
-        <h2 class="text-xl md:text-5xl mb-4 text-center">
+        <h2 class="text-xl md:text-5xl mb-8 text-center">
             Questions fréquentes
         </h2>
         {
             qanda.map((qa) => (
-                <div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative">
+                <div class="rounded-md bg-[#0085C8] p-2 max-w-[77ch] mx-auto mb-4 foldable_question relative [&.open]:mb-6">
                     <p
                         class="text-left max-w-[75ch] text-sm md:text-xl mx-auto px-2 pr-6 cursor-pointer"
                         aria-role="button"
                     >
-                        <em class="text-white">{qa.question}</em>
+                        <span class="text-white" set:html={qa.question} />
                         <span class="text-white absolute top-2 md:top-1.5 right-3 block drawer_indicator" />
                     </p>
-                    <p class="bg-[#cbe9f8] text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block">
-                        {qa.answer}
-                    </p>
+                    <p
+                        class="bg-white text-[#1b5876] rounded-b-md text-sm md:text-xl -m-2 mt-0 relative top-2 p-4 answer hidden [&.open]:block"
+                        set:html={qa.answer}
+                    />
                 </div>
             ))
         }

@@ -43,7 +43,10 @@ const strings = [
                                     {typeof ss === "string" ? (
                                         ss
                                     ) : (
-                                        <span class="soon">{ss.content}</span>
+                                        <span>
+                                            <span class="soon mr-2 inline-block" />
+                                            {ss.content}
+                                        </span>
                                     )}
                                 </td>
                             ))}
