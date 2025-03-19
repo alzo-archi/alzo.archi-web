@@ -1,8 +1,8 @@
 ---
 const strings = [
     ["Webhooks sortants", "API en lecture, privilèges par-client"],
-    ["Hébergement on-prem sur demande", "Intégration à Adobe inDesign"],
-    ["2FA via TOTP", ""],
+    ["Hébergement on-prem sur demande", {soon: true, content: "Intégration à la suite Adobe"}],
+    ["2FA via TOTP", {soon: true, content: "Intégration à la suite Office"}],
 ];
 ---
 
@@ -20,7 +20,14 @@ const strings = [
                         <tr>
                             {s.map((ss) => (
                                 <td class="border-brand border-y py-2 px-4">
-                                    {ss}
+                                    {typeof ss === "string" ? (
+                                        ss
+                                    ) : (
+                                        <span>
+                                            <span class="soon mr-2 inline-block" />
+                                            {ss.content}
+                                        </span>
+                                    )}
                                 </td>
                             ))}
                         </tr>
