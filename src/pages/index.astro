@@ -4,28 +4,35 @@ import Faq from "../components/faq.astro";
 import Letschat from "../components/letschat.astro";
 import Services from "../components/services.astro";
 import Custom from "../components/custom.astro";
+import CustomIntro from "../components/custom-intro.astro";
 import Header from "../components/header.astro";
 import Newagency from "../components/newagency.astro";
 import Introwithscreenshot from "../components/introwithscreenshot.astro";
 import Bandwithvideos from "../components/bandwithvideos.astro";
 import Firstdetails from "../components/firstdetails.astro";
 import Testimonials from "../components/testimonials.astro";
-import Features from "../components/features.astro";
+import FeaturesPart1 from "../components/features-part1.astro";
+import FeaturesPart2 from "../components/features-part2.astro";
 import IntroTitle from "./../components/intro_title.astro";
 ---
 
 <Layout
-    title="Alzo, la mémoire d'agence qui accélère votre communication et vos réponses aux marchés publics, pour architectes et bureaux d'études"
+    title="Alzo |  Communication unifiée, mémoire d'agence et appels d'offres accélérés pour agences d'architecture et bureaux d'études."
+    description="Solution spécialisée pour agences d'architecture et bureaux d'études. Accélérez vos réponses aux marchés publics et valorisez vos références grâce à notre outil de mémoire d'agence."
+    canonical="https://alzo.archi/"
 >
     <!-- Début de widget de lien Calendly -->
     <link
         href="https://assets.calendly.com/assets/external/widget.css"
         rel="stylesheet"
+        media="print"
+        onload="this.media='all'"
     />
     <script
         src="https://assets.calendly.com/assets/external/widget.js"
         type="text/javascript"
-        async></script>
+        async
+        defer></script>
     <!-- Fin de widget de lien Calendly -->
     <main>
         <Header />
@@ -35,9 +42,11 @@ import IntroTitle from "./../components/intro_title.astro";
         <IntroTitle />
         <Firstdetails />
         <Testimonials />
-        <Features />
+        <FeaturesPart1 />
     </main>
     <Custom />
+    <FeaturesPart2 />
+    <CustomIntro />
     <Services />
     <Letschat />
     <Faq />

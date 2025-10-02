@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Agence Rayssac",
+    "logo": "/logos/rayssac.svg",
+    "city": "Narbonne (11)",
+    "description": "Automatisation de tous documents via Alzo",
+    "collaborators": [
+      {
+        "name": "Laura Savignac (design)",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "AGS Architecture",
+    "logo": "/logos/ags.png",
+    "city": "Lourdes (65)",
+    "description": "Site web et automatisation de tous documents via Alzo",
+    "collaborators": [
+      {
+        "name": "Johanna Larosa Développement & Communication",
+        "url": "https://www.linkedin.com/company/johanna-larosa/"
+      },
+      {
+        "name": "Laura Savignac (design)",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "ASAKA Architectes",
+    "logo": "/logos/asaka.svg",
+    "city": "Toulouse (31)",
+    "description": "Site web et automatisation de tous documents via Alzo",
+    "collaborators": [
+      {
+        "name": "Johanna Larosa Développement & Communication",
+        "url": "https://www.linkedin.com/company/johanna-larosa/"
+      },
+      {
+        "name": "Laura Savignac (design)",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "Tikoam",
+    "logo": "/logos/tikoam.png",
+    "city": "Anglet (64)",
+    "description": "Remplacement total d'inDesign pour l'agence Tikoam par un outil sur-mesure pour composer des mémoires techniques et portfolios à plusieurs, à la vitesse de l'éclair.",
+    "collaborators": [
+      {
+        "name": "Laura Savignac",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "Séquences",
+    "logo": "/logos/sequences.png",
+    "city": "Toulouse (31)",
+    "description": "Base de données métier complète on-prem, édition multisupports avancée, multi-utilisateur, API publique, sites web autogénérés, extensibilité.<br />La première instance d'Alzo !",
+    "collaborators": [
+      {
+        "name": "Laura Savignac",
+        "url": "https://laurasavignac.com"
+      },
+      {
+        "name": "atelier regular",
+        "url": "https://a-regular.com/"
+      }
+    ]
+  },
+  {
+    "name": "Architecture Malacan Martres",
+    "logo": "/logos/amm.png",
+    "city": "Toulouse (31)",
+    "description": "Automatisation des supports de présentation concours et site web via un backoffice unifié.",
+    "collaborators": [
+      {
+        "name": "Johanna Larosa Développement & Communication",
+        "url": "https://www.linkedin.com/company/johanna-larosa/"
+      },
+      {
+        "name": "Laura Savignac",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "Duffau &Associés",
+    "logo": "/logos/duffau.png",
+    "city": "Toulouse (31)",
+    "description": "Automatisation des supports de présentation concours et site web via un backoffice unifié, génération d'images, pipeline d'édition de books remplaçant inDesign.",
+    "collaborators": [
+      {
+        "name": "Laura Savignac",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "LCR Architectes",
+    "logo": "/logos/lcr.png",
+    "city": "Toulouse (31)",
+    "description": "Automatisation des supports de présentation et site web via un backoffice unifié.",
+    "collaborators": [
+      {
+        "name": "Johanna Larosa Développement & Communication",
+        "url": "https://www.linkedin.com/company/johanna-larosa/"
+      },
+      {
+        "name": "Laura Savignac",
+        "url": "https://laurasavignac.com"
+      }
+    ]
+  },
+  {
+    "name": "Scalène",
+    "logo": "/logos/scalene.png",
+    "city": "Toulouse (31)",
+    "description": "Base de données métier complète, édition multisupports avancée, API publique, sites web autogénérés. Un projet précurseur d'alzo !",
+    "collaborators": [
+      {
+        "name": "atelier documents",
+        "url": "https://documents.design/"
+      }
+    ]
+  },
+  {
+    "name": "Execo",
+    "logo": "/logos/execo.png",
+    "city": "Toulouse (31)",
+    "description": "Automatisation de supports de présentations.",
+    "collaborators": [
+      {
+        "name": "atelier regular",
+        "url": "https://a-regular.com/"
+      }
+    ]
+  }
+]

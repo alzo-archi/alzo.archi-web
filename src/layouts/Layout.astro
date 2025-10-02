@@ -1,9 +1,17 @@
 ---
 interface Props {
     title: string;
+    description?: string;
+    canonical?: string;
+    image?: string;
 }
 
-const { title } = Astro.props;
+const { 
+    title, 
+    description = "Alzo, la mémoire d'agence qui accélère votre communication et vos réponses aux marchés publics, pour architectes et bureaux d'études.",
+    canonical = Astro.url.href,
+    image = "/share.png"
+} = Astro.props;
 import _style from "./style.css";
 import Footer from "./../components/footer.astro";
 ---
@@ -12,22 +20,77 @@ import Footer from "./../components/footer.astro";
 <html lang="fr_FR" data-theme="light">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Alzo, la mémoire d'agence qui accélère votre communication et vos réponses aux marchés publics, pour architectes et bureaux d'études."
-        />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
-        <meta property="og:image" content="/share.png" />
+        
+        <!-- Primary Meta Tags -->
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta name="keywords" content="architectes, agence d'architecture, mémoire technique, marchés publics, appels d'offre, concours d'architecture, MAPA, bureaux d'études, BIM, base de connaissances" />
+        <meta name="author" content="Alzo" />
+        <meta name="robots" content="index, follow" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={new URL(image, Astro.url)} />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="Alzo" />
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={canonical} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={new URL(image, Astro.url)} />
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href={canonical} />
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/fav_alzo.svg" type="image/x-icon" />
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/style.css" />
+        
+        <!-- Analytics -->
         <script
             is:inline
             async
             defer
             data-domain="alzo.archi"
             src="https://stats.documents.design/js/plausible.js"></script>
-        <link rel="shortcut icon" href="/fav_alzo.svg" type="image/x-icon" />
-        <link rel="stylesheet" href="/style.css" />
-        <title>{title}</title>
+            
+        <!-- Structured Data / JSON-LD -->
+        <script type="application/ld+json" is:inline>
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Alzo",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            },
+            "description": "Logiciel de gestion de mémoire technique pour agences d'architecture, facilitant les réponses aux marchés publics et la valorisation des références de projets.",
+            "creator": {
+                "@type": "Organization",
+                "name": "Alzo",
+                "url": "https://alzo.archi",
+                "logo": "https://alzo.archi/alzo.svg"
+            },
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "Agences d'architecture, Bureaux d'études, Architectes"
+            },
+            "inLanguage": "fr-FR"
+        }
+        </script>
     </head>
     <body class="font-normal">
         <slot />

@@ -6,15 +6,16 @@
     class="bg-isabelline fixed z-50 shadow-md w-full h-14 md:h-18 p-2 border-none flex justify-between align-center"
 >
     <div
-        class="relative mx-auto w-full max-w-[1440px] flex justify-between align-center"
+        class="relative mx-auto w-full max-w-[1440px] flex justify-start align-center"
     >
         <img
             class="h-6 md:h-8 ml-2 mt-[.35em] block filter border-none"
             src="/alzo.svg"
             alt=""
         />
+
         <button
-            class="btn btn-sm md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand hover:bg-brand text-white rounded-full"
+            class="btn btn-sm ml-auto md:btn-sm relative top-1 md:top-[.25em] border-none hover:-translate-y-[0.15em] hover:border-none hover:shadow-xl bg-brand hover:bg-brand text-white rounded-full hidden md:inline-block"
             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-lucassifoni/30min?hide_gdpr_banner=1&background_color=f8f6f2&primary_color=fd4f00'});return false;"
             >Demander une démo</button
         >
