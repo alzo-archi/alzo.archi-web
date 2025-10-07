@@ -1,14 +1,14 @@
 [
   {
     "name": "AGS Architecture",
-    "url": "https://agsarchitecture.fr/projets",
-    "domain": "agsarchitecture.fr/projets",
+    "url": "https://agsarchitecture.fr/",
+    "domain": "agsarchitecture.fr/",
     "description": "Site web d'AGS Architecture, fait avec Alzo<br/>Coordination <a class=\"underlined\" href=\"https://www.linkedin.com/company/johanna-larosa/\">Johanna Larosa Développement & Communication</a><br/>Design <a class=\"underlined\" href=\"https://laurasavignac.com/\">Laura Savignac</a>"
   },
   {
     "name": "ASAKA Architectes",
-    "url": "https://asaka-architectes.com/projets",
-    "domain": "asaka-architectes.com/projets",
+    "url": "https://asaka-architectes.com/",
+    "domain": "asaka-architectes.com/",
     "description": "Site web d'ASAKA Architectes, fait avec Alzo<br/>Coordination <a class=\"underlined\" href=\"https://www.linkedin.com/company/johanna-larosa/\">Johanna Larosa Développement & Communication</a><br/>Design <a class=\"underlined\" href=\"https://laurasavignac.com/\">Laura Savignac</a>"
   }
 ]

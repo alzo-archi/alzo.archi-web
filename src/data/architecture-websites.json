@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Scalène (Toulouse, 31)",
+    "url": "https://scalene.fr",
+    "screenshot": "/sites/scalene.webp",
+    "description": "Design : Atelier Documents"
+  },
+  {
+    "name": "PPA Architectures (Toulouse, 31)",
+    "url": "https://ppa-a.fr",
+    "screenshot": "/sites/ppa.webp",
+    "description": "Design : Atelier Documents"
+  },
+  {
+    "name": "Tikoam (Anglet, 64)",
+    "url": "https://tikoam.com",
+    "screenshot": "/sites/tikoam.webp",
+    "description": "Design : Atelier Documents"
+  },
+  {
+    "name": "Execo (Toulouse, 31)",
+    "url": "https://exe-eco.fr",
+    "screenshot": "/sites/execo.webp",
+    "description": "Design : Atelier Regular"
+  },
+  {
+    "name": "Duffau &Associés (Toulouse, 31)",
+    "url": "https://duffau-associes.com",
+    "screenshot": "/sites/duffau.webp",
+    "description": "Design : Duffau &Associés / Laura Savignac"
+  },
+  {
+    "name": "LCR Architectes (Toulouse, 31)",
+    "url": "https://lcrarchitectes.com",
+    "screenshot": "/sites/lcr.webp",
+    "description": "Design : Laura Savignac / Direction Johanna Larosa"
+  },
+  {
+    "name": "Architecture Malacan Martres (Toulouse, 31)",
+    "url": "https://a-mm.fr",
+    "screenshot": "/sites/amm.webp",
+    "description": "Design : Laura Savignac / Direction Johanna Larosa"
+  }
+]
