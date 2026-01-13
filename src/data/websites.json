@@ -1,5 +1,11 @@
 [
   {
+    "name": "Séquences",
+    "url": "https://sequences.fr/",
+    "domain": "sequences.fr/",
+    "description": "Site web de Séquences, fait avec Alzo."
+  },
+  {
     "name": "AGS Architecture",
     "url": "https://agsarchitecture.fr/",
     "domain": "agsarchitecture.fr/",
